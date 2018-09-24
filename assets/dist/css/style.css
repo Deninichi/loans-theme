@@ -1,0 +1,89 @@
+/********************************************************************************************
+
+	Rubik
+
+********************************************************************************************/
+/* rubik-light 200 */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 200;
+  src: url(/wp-content/themes/loans/assets/webfonts/rubik-light-webfont.ttf);
+  src: local("Rubik Light"), local("Rubik-Light"), url(/wp-content/themes/loans/assets/webfonts/rubik-light-webfont.woff2) format("woff2"), url(/wp-content/themes/loans/assets/webfonts/rubik-light-webfont.woff) format("woff"); }
+
+/* rubik-regular 400 */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/wp-content/themes/loans/assets/webfonts/Rubik-Regular.ttf);
+  src: local("Rubik Regular"), local("Rubik-Regular"), url(/wp-content/themes/loans/assets/webfonts/rubik-regular-webfont.woff2) format("woff2"), url(/wp-content/themes/loans/assets/webfonts/rubik-regular-webfont.woff) format("woff"); }
+
+/* rubik-italic 400 */
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 400;
+  src: url(/wp-content/themes/loans/assets/webfonts/Rubik-Italic.ttf);
+  src: local("Rubik Italic"), local("Rubik-Italic"), url(/wp-content/themes/loans/assets/webfonts/rubik-italic-webfont.woff2) format("woff2"), url(/wp-content/themes/loans/assets/webfonts/rubik-italic-webfont.woff) format("woff"); }
+
+/* rubik-medium 500 */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: url(/wp-content/themes/loans/assets/webfonts/Rubik-Medium.ttf);
+  src: local("Rubik Medium"), local("Rubik-Medium"), url(/wp-content/themes/loans/assets/webfonts/rubik-medium-webfont.woff2) format("woff2"), url(/wp-content/themes/loans/assets/webfonts/rubik-medium-webfont.woff) format("woff"); }
+
+/* rubik-medium 700 */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/wp-content/themes/loans/assets/webfonts/Rubik-Bold.ttf);
+  src: local("Rubik Bold"), local("Rubik-Bold"), url(/wp-content/themes/loans/assets/webfonts/rubik-bold-webfont.woff2) format("woff2"), url(/wp-content/themes/loans/assets/webfonts/rubik-bold-webfont.woff) format("woff"); }
+
+/* rubik-medium 900 */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 900;
+  src: url(/wp-content/themes/loans/assets/webfonts/Rubik-Black.ttf);
+  src: local("Rubik Black"), local("Rubik-Black"), url(/wp-content/themes/loans/assets/webfonts/rubik-black-webfont.woff2) format("woff2"), url(/wp-content/themes/loans/assets/webfonts/rubik-black-webfont.woff) format("woff"); }
+
+/********************************************************************************************
+
+	GENERAL STYLES
+
+********************************************************************************************/
+.color-facebook {
+  color: #4464b1 !important; }
+
+.color-twitter {
+  color: #1cb7eb !important; }
+
+.color-instagram {
+  color: #ee1b24 !important; }
+
+.color-youtube {
+  color: #e32115 !important; }
+
+.color-googleplus {
+  color: #da4936 !important; }
+
+.color-linkedin {
+  color: #007ab9 !important; }
+
+.color-twitch {
+  color: #6441a5 !important; }
+
+.color-email {
+  color: #da4936 !important; }
+
+.color-pinterest {
+  color: #ee1b24 !important; }
+
+.color-wikipedia {
+  color: #2f495a !important; }
+
+/*======== HEADER ========*/

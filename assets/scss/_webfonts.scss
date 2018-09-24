@@ -1,0 +1,73 @@
+/********************************************************************************************
+
+	Rubik
+
+********************************************************************************************/
+/* rubik-light 200 */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../webfonts/rubik-light-webfont.ttf');
+  src: local('Rubik Light'), local('Rubik-Light'),
+       url('../webfonts/rubik-light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../webfonts/rubik-light-webfont.woff') format('woff'), /* Modern Browsers */
+}
+
+/* rubik-regular 400 */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../webfonts/Rubik-Regular.ttf');
+  src: local('Rubik Regular'), local('Rubik-Regular'),
+       url('../webfonts/rubik-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../webfonts/rubik-regular-webfont.woff') format('woff'), /* Modern Browsers */
+}
+
+/* rubik-italic 400 */
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../webfonts/Rubik-Italic.ttf');
+  src: local('Rubik Italic'), local('Rubik-Italic'),
+       url('../webfonts/rubik-italic-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../webfonts/rubik-italic-webfont.woff') format('woff'), /* Modern Browsers */
+}
+
+/* rubik-medium 500 */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../webfonts/Rubik-Medium.ttf');
+  src: local('Rubik Medium'), local('Rubik-Medium'),
+       url('../webfonts/rubik-medium-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../webfonts/rubik-medium-webfont.woff') format('woff'), /* Modern Browsers */
+}
+
+/* rubik-medium 700 */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../webfonts/Rubik-Bold.ttf');
+  src: local('Rubik Bold'), local('Rubik-Bold'),
+       url('../webfonts/rubik-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../webfonts/rubik-bold-webfont.woff') format('woff'), /* Modern Browsers */
+}
+
+/* rubik-medium 900 */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../webfonts/Rubik-Black.ttf');
+  src: local('Rubik Black'), local('Rubik-Black'),
+       url('../webfonts/rubik-black-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../webfonts/rubik-black-webfont.woff') format('woff'), /* Modern Browsers */
+}
+
+
+

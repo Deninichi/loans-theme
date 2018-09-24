@@ -1,0 +1,86 @@
+$body-color: #4f4d66;
+$border-color: #f2f6f9;
+$blue-grey: #334c5d;
+$grey: #f4f7f9;
+$light-grey: #e5edf5;
+$lighter-grey: #fafcfd;
+$hr-color: #f2f6f9;
+$navy: #142743;
+$pink: #ee4957;
+$bright-pink: #ff2d79;
+$purple: #5031a9;
+$dark-purple: #4b2ca1;
+$yellow: #ffd100;
+$heading-color: #4f4d66;
+
+$facebook-color: #4464b1;
+$twitter-color: #1cb7eb;
+$instagram-color: #ee1b24;
+$youtube-color: #e32115;
+$googleplus-color: #da4936;
+$linkedin-color: #007ab9;
+$twitch-color: #6441a5;
+$email-color: #da4936;
+$pinterest-color: #ee1b24;
+$wikipedia-color: #2f495a;
+
+.color-facebook {
+	color: $facebook-color !important;
+}
+.color-twitter {
+	color: $twitter-color !important;
+}
+.color-instagram {
+	color: $instagram-color !important;
+}
+.color-youtube {
+	color: $youtube-color !important;
+}
+.color-googleplus {
+	color: $googleplus-color !important;
+}
+.color-linkedin {
+	color: $linkedin-color !important;
+}
+.color-twitch {
+	color: $twitch-color !important;
+}
+.color-email {
+	color: $email-color !important;
+}
+.color-pinterest {
+	color: $pinterest-color !important;
+}
+.color-wikipedia {
+	color: $wikipedia-color !important;
+}
+
+
+$easing-cubic-bezier-speed: 200ms;
+$easing-cubic-bezier: cubic-bezier(0.7, 0, 0, 0.7);
+
+@mixin font-asap {
+	font-family: 'Asap',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+@mixin font-encodesans-se {
+	font-family: 'Encode Sans Semi Expanded',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}	
+@mixin light-to-darkgreen-gradient-135deg {
+	background-image: linear-gradient(135deg, #013453, #00273f);
+}	
+@mixin darkgreen-to-grey-gradient {
+	background-image: linear-gradient(to right, #314b5c, #364f5f);
+}
+@mixin darkgreen-to-grey-lighter-gradient {
+	background-image: linear-gradient(to right, #364f5f, #4a5d6a);
+}
+@mixin purple-diagonal-gradient {
+	background-image: linear-gradient(left top, right bottom, #5031a9, #5031a9);
+}
+@mixin addClearfix {
+	&:after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
