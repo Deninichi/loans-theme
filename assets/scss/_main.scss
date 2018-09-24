@@ -6,4 +6,154 @@
 @import "mixins";
 
 
+/*======== TYPOGRAPHY ========*/
+body{
+	color: $body-color;
+	font-size: 15px;
+	@include font-rubick;
+	font-weight: 400;
+}
+
 /*======== HEADER ========*/
+header{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+    .logo{
+    	@include font-rubick;
+    	color: $pink;
+    	text-transform: uppercase;
+    	font-weight: 700;
+    	font-size: 1.5rem;
+
+    	span{
+    		font-weight: 400;
+    		color: $heading-color;
+    	}
+    }
+
+	nav{
+		height: 100%;
+
+	    ul{
+			display: flex;
+		    flex-wrap: wrap;
+	    	list-style: none;
+	    	align-items: center;
+		    margin: 0;
+		    padding: 0;
+		    height: 100%;
+
+	    	> li{
+	    		margin: 0 1rem;
+				
+				&:first-child{
+					margin-left: 0;
+				}
+
+				&:last-child{
+					margin-right: 0;
+				}
+
+	    		> a{
+	    			color: $heading-color;
+	    			text-transform: uppercase;
+	    			font-weight: 500;
+	    			transition: color .3s;
+
+	    			&:hover{
+	    				color: $pink;
+	    				text-decoration: none;
+	    			}
+	    		}
+	    	}
+	    }
+	}
+
+	.top-socials {
+
+		ul{
+    		list-style: none;
+    		margin: 0;
+    		padding: 0;
+    		height: 100%;
+
+    		li{
+    			margin: 0 .7rem;
+
+    			a{
+    				color: $dark-green;
+    				transition: opacity .3s;
+
+    				&:hover{
+    					opacity: .75;
+    				}
+    			}
+    		}
+		}
+	}
+}
+
+
+/*======== FOOTER ========*/
+footer{
+	border-top: 5px solid $dark-green;
+	margin-top: 4rem;
+	
+	.footer-menu{
+		margin: 2.75rem 0;
+
+		nav{
+			height: 100%;
+
+		    ul{
+				display: flex;
+			    flex-wrap: wrap;
+		    	list-style: none;
+		    	align-items: center;
+			    margin: 0;
+			    padding: 0;
+			    height: 100%;
+
+		    	> li{
+		    		margin: 0 1rem;
+					
+					&:first-child{
+						margin-left: 0;
+					}
+
+					&:last-child{
+						margin-right: 0;
+					}
+
+		    		> a{
+		    			color: $heading-color;
+		    			text-transform: uppercase;
+		    			font-weight: 500;
+		    			transition: color .3s;
+
+		    			&:hover{
+		    				color: $pink;
+		    				text-decoration: none;
+		    			}
+		    		}
+		    	}
+		    }
+		}
+	}
+
+	.dmca-logo img{
+		background-color: $dark-green;
+		padding: 1.25rem 1.5625rem;
+	}
+
+	.copyright{
+		color: $heading-color;
+	}
+}
+
+
+
+

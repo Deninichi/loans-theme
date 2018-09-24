@@ -1,17 +1,9 @@
-$body-color: #4f4d66;
+$body-color: #92959c;
+$heading-color: #171717;
 $border-color: #f2f6f9;
-$blue-grey: #334c5d;
-$grey: #f4f7f9;
-$light-grey: #e5edf5;
-$lighter-grey: #fafcfd;
-$hr-color: #f2f6f9;
-$navy: #142743;
-$pink: #ee4957;
-$bright-pink: #ff2d79;
-$purple: #5031a9;
-$dark-purple: #4b2ca1;
-$yellow: #ffd100;
-$heading-color: #4f4d66;
+$pink: #eb5864;
+$dark-green: #207a88;
+
 
 $facebook-color: #4464b1;
 $twitter-color: #1cb7eb;
@@ -59,8 +51,8 @@ $wikipedia-color: #2f495a;
 $easing-cubic-bezier-speed: 200ms;
 $easing-cubic-bezier: cubic-bezier(0.7, 0, 0, 0.7);
 
-@mixin font-asap {
-	font-family: 'Asap',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+@mixin font-rubick {
+	font-family: 'Rubik',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 @mixin font-encodesans-se {
 	font-family: 'Encode Sans Semi Expanded',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";

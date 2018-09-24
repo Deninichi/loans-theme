@@ -1,4 +1,5 @@
 import scss from '../scss/style.scss'; 
+
 'use strict';
 
 (function($) {

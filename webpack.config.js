@@ -2,6 +2,8 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ReplaceInFileWebpackPlugin = require('replace-in-file-webpack-plugin');
 const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
+
  
 // Theme name
 const THEME_NAME = 'loans';
@@ -44,35 +46,33 @@ const rules = [
     // Load CSS 
     {
         test: /\.css$/,
-        loader: 'style-loader',
-    },
-    {
-        test: /\.css$/,
-        use: extractCss.extract([
-            {
-                loader: 'css-loader',
-                options: {
-                    minimize: true
-                }
-            },
-            'postcss-loader'
-        ])
+        use: extractCss.extract({
+            use: [
+                'style-loader',
+                { loader: 'css-loader', options: { importLoaders: 1, minimize: false } },
+                'postcss-loader'
+            ]
+        })
     },
     // Rebuild SASS
     {
         rules: [{
             test: /\.scss$/,
             use: extractSass.extract({
-                use: [{
-                    loader: "css-loader",
-                    options: {
-                        minimize: false
+                use: [
+                    {
+                        loader: "css-loader",
+                        options: {
+                            minimize: false
+                        }
+                    },
+                    {
+                        loader: 'postcss-loader'
+                    },
+                    {
+                        loader: "sass-loader"
                     }
-                }, {
-                    loader: "sass-loader"
-                }, {
-                    loader: 'postcss-loader'
-                }],
+                ],
                 fallback: "style-loader"
             })
         }]
@@ -86,7 +86,7 @@ const rules = [
                 loader: 'file-loader',
                 options: {
                     context: 'public',
-                    name: 'assets/images/[name].[ext]?v=[hash]',
+                    name: '../images/[name].[ext]?v=[hash]',
                     publicPath: './',
                 },
             },
@@ -97,7 +97,9 @@ const rules = [
         exclude: /node_modules/,
         loader: 'file-loader',
         options: {
-            name: 'wp-content/themes/loans/assets/webfonts/[name].[ext]'
+            context: 'public',
+            name: '../webfonts/[name].[ext]',
+            publicPath: './'
         }
     }
 ];

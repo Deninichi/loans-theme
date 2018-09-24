@@ -4,7 +4,7 @@
 	<!-- Main -->
 	<section class="main">
 
-	<section>
+	</section>
 	<!-- End Main -->
 
 <?php get_footer(); ?>
