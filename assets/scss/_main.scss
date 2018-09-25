@@ -37,6 +37,29 @@ header{
 	nav{
 		height: 100%;
 
+		&.navbar-animated .navbar-toggler .icon-bar {
+			background-color: $heading-color;
+		}
+
+		.navbar-toggler {		
+			.icon-bar {
+				&:nth-child(1) {
+					width: 100%;
+				}
+				&:nth-child(2) {
+					width: 100%;
+				}
+			}		
+			&.opened {
+				.icon-bar {
+					&:nth-child(1),
+					&:nth-child(2) {
+						width: 100%;
+					}
+				}
+			}
+		}
+
 	    ul{
 			display: flex;
 		    flex-wrap: wrap;

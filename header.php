@@ -15,13 +15,23 @@
 		<div class="logo">
 			Some<span>logo</span>
 		</div>
-		<div class="main-menu">
+		<nav class="main-menu nav-primary navbar navbar-animated navbar-expand-xl">
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrimary" aria-controls="navbarPrimary" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
 			<?php wp_nav_menu( array(
 				'theme_location'  => 'primary_menu',
 				'menu'            => 'header_menu',
-				'container'       => 'nav'
+				'container'       => 'div',
+				'container_class' => 'collapse navbar-collapse',
+				'container_id'    => 'navbarPrimary',
+				'menu_class'      => 'navbar-nav ml-auto',
 			) ); ?>
-		</div>
+		</nav>
 		<div class="top-socials">
 			<ul class="d-flex align-items-center">
 				<li><a href="#"><i class="fab fa-youtube"></a></i></li>
