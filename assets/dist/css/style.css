@@ -53,9 +53,65 @@
 
 /********************************************************************************************
 
+  Lato
+
+********************************************************************************************/
+/* lato-light 200 */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 200;
+  src: url(./../webfonts/Lato-Light.eot);
+  /* IE9 Compat Modes */
+  src: local("Lato Light"), local("Lato-Light"), url(./../webfonts/Lato-Light.eot?#iefix) format("embedded-opentype"), url(./../webfonts/Lato-Light.woff2) format("woff2"), url(./../webfonts/Lato-Light.woff) format("woff"), url(./../webfonts/Lato-Light.ttf) format("truetype"), url(./../webfonts/Lato-Light.svg#Lato-Light) format("svg");
+  /* Legacy iOS */ }
+
+/* lato-regular 400 */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./../webfonts/Lato-Regular.eot);
+  /* IE9 Compat Modes */
+  src: local("Lato Regular"), local("Lato-Regular"), url(./../webfonts/Lato-Regular.eot?#iefix) format("embedded-opentype"), url(./../webfonts/Lato-Regular.woff2) format("woff2"), url(./../webfonts/Lato-Regular.woff) format("woff"), url(./../webfonts/Lato-Regular.ttf) format("truetype"), url(./../webfonts/Lato-Regular.svg#Lato-Regular) format("svg");
+  /* Legacy iOS */ }
+
+/* lato-regular italic 400 */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url(./../webfonts/Lato-Italic.eot);
+  /* IE9 Compat Modes */
+  src: local("Lato Italic"), local("Lato-Italic"), url(./../webfonts/Lato-Italic.eot?#iefix) format("embedded-opentype"), url(./../webfonts/Lato-Italic.woff2) format("woff2"), url(./../webfonts/Lato-Italic.woff) format("woff"), url(./../webfonts/Lato-Italic.ttf) format("truetype"), url(./../webfonts/Lato-Italic.svg#Lato-Italic) format("svg");
+  /* Legacy iOS */ }
+
+/* lato-bold 600 */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  src: url(./../webfonts/Lato-Bold.eot);
+  /* IE9 Compat Modes */
+  src: local("Lato Bold"), local("Lato-Bold"), url(./../webfonts/Lato-Bold.eot?#iefix) format("embedded-opentype"), url(./../webfonts/Lato-Bold.woff2) format("woff2"), url(./../webfonts/Lato-Bold.woff) format("woff"), url(./../webfonts/Lato-Bold.ttf) format("truetype"), url(./../webfonts/Lato-Bold.svg#Lato-Bold) format("svg");
+  /* Legacy iOS */ }
+
+/* lato-black 900 */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url(./../webfonts/Lato-Black.eot);
+  /* IE9 Compat Modes */
+  src: local("Lato Black"), local("Lato-Black"), url(./../webfonts/Lato-Black.eot?#iefix) format("embedded-opentype"), url(./../webfonts/Lato-Black.woff2) format("woff2"), url(./../webfonts/Lato-Black.woff) format("woff"), url(./../webfonts/Lato-Black.ttf) format("truetype"), url(./../webfonts/Lato-Black.svg#Lato-Black) format("svg");
+  /* Legacy iOS */ }
+
+/********************************************************************************************
+
 	GENERAL STYLES
 
 ********************************************************************************************/
+/* Colors */
 .color-facebook {
   color: #4464b1 !important; }
 
@@ -86,12 +142,24 @@
 .color-wikipedia {
   color: #2f495a !important; }
 
+/* Backgrounds */
+.bg-white {
+  background-color: #fff; }
+
+.bg-grey {
+  background-color: #fafbfd !important; }
+
 /*======== TYPOGRAPHY ========*/
 body {
   color: #92959c;
   font-size: 15px;
   font-family: 'Rubik',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400; }
+
+h1 {
+  font-size: 3.2rem;
+  color: #171717;
+  text-transform: uppercase; }
 
 /*======== HEADER ========*/
 header {
@@ -159,6 +227,24 @@ header {
         header .top-socials ul li a:hover {
           opacity: .75; }
 
+/*======== MAIN CONTENT ========*/
+.main {
+  padding-top: 6rem; }
+
+.title-block h1 {
+  margin-right: .7rem; }
+
+.post-modify-date {
+  color: #207a88;
+  font-size: 1.05rem; }
+  .post-modify-date .fas {
+    margin-right: .7rem; }
+  .post-modify-date strong {
+    font-weight: 500; }
+
+.main-content {
+  margin-top: 6rem; }
+
 /*======== FOOTER ========*/
 footer {
   border-top: 5px solid #207a88;
@@ -197,6 +283,29 @@ footer {
     padding: 1.25rem 1.5625rem; }
   footer .copyright {
     color: #171717; }
+
+/*======== ELEMENTS ========*/
+.add-strike-through {
+  position: relative;
+  text-align: center; }
+  .add-strike-through:before {
+    background-color: #e3e8f0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: .7rem; }
+  .add-strike-through .text-wrapper {
+    background: white;
+    z-index: 10;
+    position: relative;
+    padding: 0 20px; }
+
+/*======== PAGES ========*/
+/*=== Home page ===*/
+.container {
+  max-width: 1400px; }
 
 /* animated hamburger */
 .navbar-animated .navbar-toggle {

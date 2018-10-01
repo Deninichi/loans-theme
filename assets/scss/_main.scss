@@ -13,6 +13,11 @@ body{
 	@include font-rubick;
 	font-weight: 400;
 }
+h1{
+	font-size: 3.2rem;
+	color: $heading-color;
+	text-transform: uppercase;
+}
 
 /*======== HEADER ========*/
 header{
@@ -120,6 +125,34 @@ header{
 }
 
 
+/*======== MAIN CONTENT ========*/
+.main{
+	padding-top: 6rem;
+}
+.title-block {
+
+	h1{
+		margin-right: .7rem;
+	}
+}
+
+.post-modify-date{
+	color: $dark-green;
+	font-size: 1.05rem;
+
+	.fas{
+		margin-right: .7rem;
+	}
+
+	strong{
+		font-weight: 500;
+	}
+}
+
+.main-content{
+	margin-top: 6rem;
+}
+
 /*======== FOOTER ========*/
 footer{
 	border-top: 5px solid $dark-green;
@@ -177,6 +210,30 @@ footer{
 	}
 }
 
+/*======== ELEMENTS ========*/
+.add-strike-through {
+	position: relative;
+	text-align: center;
+	
+	&:before{
+		background-color: #e3e8f0;
+	    content: '';
+	    display: block;
+	    width: 100%;
+	    height: 2px;
+	    position: absolute;
+	    top: .7rem;
+	}
+
+	.text-wrapper{
+		background: white;
+	    z-index: 10;
+	    position: relative;
+	    padding: 0 20px;
+	}
+}
 
 
+/*======== PAGES ========*/
+/*=== Home page ===*/
 

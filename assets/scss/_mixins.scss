@@ -1,9 +1,11 @@
+/* Colors */
 $body-color: #92959c;
 $heading-color: #171717;
 $border-color: #f2f6f9;
 $pink: #eb5864;
 $dark-green: #207a88;
-
+$grey: #fafbfd;
+$light-grey: #e3e8f0;
 
 $facebook-color: #4464b1;
 $twitter-color: #1cb7eb;
@@ -45,6 +47,15 @@ $wikipedia-color: #2f495a;
 }
 .color-wikipedia {
 	color: $wikipedia-color !important;
+}
+
+
+/* Backgrounds */
+.bg-white{
+	background-color: #fff;
+}
+.bg-grey{
+	background-color: $grey !important;
 }
 
 
