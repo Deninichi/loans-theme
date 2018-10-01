@@ -25,13 +25,13 @@ $title_icon = get_field( 'homepage_title_icon' );
 	</div>
 	
 	<div class="main-content row">
-		<div class="col-12 col-md-9">
+		<div id="content" class="content col-12 col-md-9">
 			
 			<?php get_template_part( 'template-parts/icon-boxes-part' ) ?>
 
 		</div>
-		<div class="col-12 col-md-3">
-			
+		<div id="sidebar" class="col-12 col-md-3">
+			<?php dynamic_sidebar( 'primary-sidebar' ); ?>
 		</div>
 	</div>
 

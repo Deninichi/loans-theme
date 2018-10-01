@@ -153,6 +153,52 @@ header{
 	margin-top: 6rem;
 }
 
+
+/*======== SIDEBAR ========*/
+#sidebar .widget{
+	border: 3px solid $dark-green;
+
+	.title-wrapper{
+		padding: 1.5rem 2rem 1rem;
+		border-bottom: 1px solid $light-grey;
+		margin-bottom: 1rem;
+
+		h3{
+			color: $heading-color;
+			margin-bottom: 0;
+    		line-height: 1;
+		}
+	}
+
+	ul{
+		padding: 0;
+
+		li{
+			list-style: none;		
+
+			a{
+				color: black;
+    			font-weight: 500;
+    			padding: 1rem 2rem;
+    			transition: all .3s;
+    			display: inline-block;
+    			width: 100%;
+
+    			.icon-wrapper{
+    				margin-right: 2rem;
+    			}
+
+    			&:hover{
+    				text-decoration: none;
+    				background-color: $dark-green;
+    				color: white;
+    			}
+			}
+		}
+	}
+}
+
+
 /*======== FOOTER ========*/
 footer{
 	border-top: 5px solid $dark-green;

@@ -245,6 +245,35 @@ header {
 .main-content {
   margin-top: 6rem; }
 
+/*======== SIDEBAR ========*/
+#sidebar .widget {
+  border: 3px solid #207a88; }
+  #sidebar .widget .title-wrapper {
+    padding: 1.5rem 2rem 1rem;
+    border-bottom: 1px solid #e3e8f0;
+    margin-bottom: 1rem; }
+    #sidebar .widget .title-wrapper h3 {
+      color: #171717;
+      margin-bottom: 0;
+      line-height: 1; }
+  #sidebar .widget ul {
+    padding: 0; }
+    #sidebar .widget ul li {
+      list-style: none; }
+      #sidebar .widget ul li a {
+        color: black;
+        font-weight: 500;
+        padding: 1rem 2rem;
+        transition: all .3s;
+        display: inline-block;
+        width: 100%; }
+        #sidebar .widget ul li a .icon-wrapper {
+          margin-right: 2rem; }
+        #sidebar .widget ul li a:hover {
+          text-decoration: none;
+          background-color: #207a88;
+          color: white; }
+
 /*======== FOOTER ========*/
 footer {
   border-top: 5px solid #207a88;
