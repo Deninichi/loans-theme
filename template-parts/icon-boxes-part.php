@@ -2,6 +2,10 @@
 
 	$boxes = get_field( 'homepage_icon_boxes' );
 
+	if( ! $boxes['global_icon_boxes'] || empty( $boxes['global_icon_boxes'] ) ){
+		return true;
+	}
+
 ?>
 
 <section class="content-section icon-boxes">
