@@ -156,10 +156,14 @@ body {
   font-family: 'Rubik',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400; }
 
-h1 {
-  font-size: 3.2rem;
+h1, .h1 {
+  font-size: 3rem;
   color: #171717;
   text-transform: uppercase; }
+
+h2, .h2 {
+  font-size: 3rem;
+  color: #171717; }
 
 /*======== HEADER ========*/
 header {
@@ -247,7 +251,8 @@ header {
 
 /*======== SIDEBAR ========*/
 #sidebar .widget {
-  border: 3px solid #207a88; }
+  border: 3px solid #207a88;
+  margin-bottom: 2rem; }
   #sidebar .widget .title-wrapper {
     padding: 1.5rem 2rem 1rem;
     border-bottom: 1px solid #e3e8f0;
@@ -331,10 +336,44 @@ footer {
     position: relative;
     padding: 0 20px; }
 
+/*======== SECTIONS ========*/
+.collapse-section {
+  padding: 3.3rem 2.6rem;
+  border-bottom: 1px solid #e3e8f0; }
+  .collapse-section .card {
+    margin-bottom: 1rem; }
+    .collapse-section .card .card-header {
+      position: relative;
+      background-color: white; }
+      .collapse-section .card .card-header button {
+        color: #171717;
+        font-size: 1.075rem;
+        font-weight: 500;
+        padding: 0;
+        line-height: 1;
+        padding-left: 48px; }
+        .collapse-section .card .card-header button::before {
+          content: '\F068';
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          position: absolute;
+          left: 0;
+          background-color: #eb5864;
+          padding: 5px;
+          top: 0;
+          height: 100%;
+          width: 48px;
+          padding-top: 15px;
+          color: white;
+          transition: all .3s; }
+        .collapse-section .card .card-header button.collapsed::before {
+          content: '\F067';
+          background-color: #207a88; }
+
 /*======== PAGES ========*/
 /*=== Home page ===*/
 .container {
-  max-width: 1400px; }
+  max-width: 1470px; }
 
 /* animated hamburger */
 .navbar-animated .navbar-toggle {

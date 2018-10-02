@@ -29,6 +29,8 @@ $title_icon = get_field( 'homepage_title_icon' );
 			
 			<?php get_template_part( 'template-parts/icon-boxes-part' ) ?>
 
+			<?php get_template_part( 'template-parts/collapse-section-part' ) ?>
+
 		</div>
 		<div id="sidebar" class="col-12 col-md-3">
 			<?php dynamic_sidebar( 'primary-sidebar' ); ?>

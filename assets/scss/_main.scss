@@ -13,10 +13,14 @@ body{
 	@include font-rubick;
 	font-weight: 400;
 }
-h1{
-	font-size: 3.2rem;
+h1, .h1{
+	font-size: 3rem;
 	color: $heading-color;
 	text-transform: uppercase;
+}
+h2, .h2{
+	font-size: 3rem;
+	color: $heading-color;
 }
 
 /*======== HEADER ========*/
@@ -157,6 +161,7 @@ header{
 /*======== SIDEBAR ========*/
 #sidebar .widget{
 	border: 3px solid $dark-green;
+	margin-bottom: 2rem;
 
 	.title-wrapper{
 		padding: 1.5rem 2rem 1rem;
@@ -279,6 +284,50 @@ footer{
 	}
 }
 
+
+/*======== SECTIONS ========*/
+.collapse-section{
+	padding: 3.3rem 2.6rem;
+	border-bottom: 1px solid $light-grey;
+
+	.card{
+		margin-bottom: 1rem;
+
+		.card-header{
+			position: relative;
+			background-color: white;
+		
+			button{
+				color: $heading-color;
+				font-size: 1.075rem;
+			    font-weight: 500;
+			    padding: 0;
+			    line-height: 1;
+			    padding-left: 48px;
+
+	    		&::before{
+	    			content: '\f068';
+	    			font-family: "Font Awesome 5 Free";
+				    font-weight: 900;
+				    position: absolute;
+				    left: 0;
+				    background-color: $pink;
+				    padding: 5px;
+				    top: 0;
+				    height: 100%;
+				    width: 48px;
+				    padding-top: 15px;
+				    color: white;
+				    transition: all .3s;
+	    		}
+	    		&.collapsed::before{
+	    			content: '\f067';
+	    			background-color: $dark-green;
+	    		}
+			}
+		}
+	}
+}
 
 /*======== PAGES ========*/
 /*=== Home page ===*/
