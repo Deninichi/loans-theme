@@ -32,6 +32,14 @@ h2, .h2{
 	}
 }
 
+a{
+	transition: color .3s;
+
+	&:hover{
+		color: $pink;
+	}
+}
+
 /*======== HEADER ========*/
 header{
 	display: flex;
@@ -167,6 +175,60 @@ header{
 }
 
 
+/*======== POST LOOP ========*/
+.post-loop-wrap{
+	background-color: white;
+    box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 0.55);
+    color: #171717;
+	
+	.post-content{
+		padding: 20px 40px 20px;
+	}
+
+    table {
+		width: 100%;
+
+    	tr td{
+			text-align: left;
+
+			&:first-child{
+				font-weight: 400;
+			}
+
+			&:last-child{
+				font-weight: 600;
+			}
+		}
+    }
+
+    .actions{
+		border-top: 1px solid #eee;
+    	padding: 1.25rem 2rem;
+
+    	.btn{
+    		display: block;
+		    background: $pink;
+		    border-radius: 20px;
+		    color: white;
+		    text-transform: uppercase;
+		    font-weight: 600;
+    	}
+    	.btn-link{
+    		display: inline-block;
+		    margin-top: 1rem;
+		    font-weight: 500;
+		    color: $dark-green;
+    	}
+    }
+
+    .bottom-desc{
+    	background-color: $dark-green;
+    	color: white;
+    	padding: .5rem;
+    }
+}
+
+
 /*======== SIDEBAR ========*/
 #sidebar .widget{
 	border: 3px solid $dark-green;
@@ -295,6 +357,9 @@ footer{
 
 
 /*======== SECTIONS ========*/
+.content-section{
+	padding: 3.3rem 1rem;
+}
 .collapse-section{
 	padding: 3.3rem 1rem;
 	border-bottom: 1px solid $light-grey;
@@ -315,6 +380,11 @@ footer{
 			    padding-left: 48px;
 			    white-space: normal;
    	 			text-align: left;
+
+   	 			&:hover{
+   	 				text-decoration: none;
+   	 				color: $pink;
+   	 			}
 
 	    		&::before{
 	    			content: '\f068';

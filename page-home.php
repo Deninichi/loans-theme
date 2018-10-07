@@ -25,14 +25,27 @@ $title_icon = get_field( 'homepage_title_icon' );
 	</div>
 	
 	<div class="main-content row">
-		<div id="content" class="content col-12 col-md-9">
+		<div id="content" class="content col-12 col-lg-8 col-xl-9">
 			
 			<?php get_template_part( 'template-parts/icon-boxes-part' ) ?>
 
 			<?php get_template_part( 'template-parts/collapse-section-part' ) ?>
 
+			<section class="posts content-section text-center">
+				<h2 class="posts-heading mb-3">Alla Positioner</h2>
+				<p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.<br>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus.</p>
+				<div class="row posts-loop mt-5">
+
+					<?php get_template_part( 'template-parts/posts/post-loop' ) ?>
+					<?php get_template_part( 'template-parts/posts/post-loop' ) ?>
+					<?php get_template_part( 'template-parts/posts/post-loop' ) ?>
+					
+				</div>
+
+			</section>
+
 		</div>
-		<div id="sidebar" class="col-12 col-md-3">
+		<div id="sidebar" class="col-12 col-lg-4 col-xl-3">
 			<?php dynamic_sidebar( 'primary-sidebar' ); ?>
 		</div>
 	</div>

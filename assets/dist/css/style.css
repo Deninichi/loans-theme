@@ -142,6 +142,12 @@
 .color-wikipedia {
   color: #2f495a !important; }
 
+.fa-check-circle {
+  color: #207a88; }
+
+.fa-times-circle {
+  color: #eb5864; }
+
 /* Backgrounds */
 .bg-white {
   background-color: #fff; }
@@ -170,6 +176,11 @@ h2, .h2 {
     font-size: 3rem; }
   h2, .h2 {
     font-size: 3rem; } }
+
+a {
+  transition: color .3s; }
+  a:hover {
+    color: #eb5864; }
 
 /*======== HEADER ========*/
 header {
@@ -254,6 +265,41 @@ header {
 
 .main-content {
   margin-top: 6rem; }
+
+/*======== POST LOOP ========*/
+.post-loop-wrap {
+  background-color: white;
+  box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 0.55);
+  color: #171717; }
+  .post-loop-wrap .post-content {
+    padding: 20px 40px 20px; }
+  .post-loop-wrap table {
+    width: 100%; }
+    .post-loop-wrap table tr td {
+      text-align: left; }
+      .post-loop-wrap table tr td:first-child {
+        font-weight: 400; }
+      .post-loop-wrap table tr td:last-child {
+        font-weight: 600; }
+  .post-loop-wrap .actions {
+    border-top: 1px solid #eee;
+    padding: 1.25rem 2rem; }
+    .post-loop-wrap .actions .btn {
+      display: block;
+      background: #eb5864;
+      border-radius: 20px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 600; }
+    .post-loop-wrap .actions .btn-link {
+      display: inline-block;
+      margin-top: 1rem;
+      font-weight: 500;
+      color: #207a88; }
+  .post-loop-wrap .bottom-desc {
+    background-color: #207a88;
+    color: white;
+    padding: .5rem; }
 
 /*======== SIDEBAR ========*/
 #sidebar .widget {
@@ -343,6 +389,9 @@ footer {
     padding: 0 20px; }
 
 /*======== SECTIONS ========*/
+.content-section {
+  padding: 3.3rem 1rem; }
+
 .collapse-section {
   padding: 3.3rem 1rem;
   border-bottom: 1px solid #e3e8f0; }
@@ -360,6 +409,9 @@ footer {
         padding-left: 48px;
         white-space: normal;
         text-align: left; }
+        .collapse-section .card .card-header button:hover {
+          text-decoration: none;
+          color: #eb5864; }
         .collapse-section .card .card-header button::before {
           content: '\F068';
           font-family: "Font Awesome 5 Free";
