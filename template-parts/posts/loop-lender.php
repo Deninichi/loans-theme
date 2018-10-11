@@ -1,7 +1,7 @@
-<div class="post-loop col-12 col-md-4 mb-4">
+<article class="post-loop col-12 col-md-4 mb-4">
 	<div class="post-loop-wrap">
 		<div class="post-image">
-			<img src="/wp-content/uploads/2018/10/logo-1.png" alt="">
+			<a href="<?php the_permalink(); ?>"><img src="/wp-content/uploads/2018/10/logo-1.png" alt=""></a>
 		</div>
 		<div class="post-content">
 			<table>
@@ -49,4 +49,4 @@
 			198 valde Freedom finance
 		</div>
 	</div>
-</div><!-- .post-loop -->
+</article><!-- .post-loop -->

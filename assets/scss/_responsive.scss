@@ -1,4 +1,4 @@
-@media (max-width: 1120px) {
+@media (max-width: 1200px) {
 	
 	/*=== HEADER ===*/
 	header{
@@ -11,7 +11,7 @@
 		}
 
 		.navbar{
-			justify-content: center;
+			justify-content: flex-end;
 			padding: 0;
 			width: 100%;
 
@@ -28,15 +28,17 @@
 				    border-bottom: 1px solid #eee;
 				    width: 100%;
 				}
-			}
-		}
 
-		.top-socials {
-			position: absolute;
-    		right: 10px;
+				.top-socials {
+					position: relative;
 
-			ul li {
-				margin: 0.3rem;
+					ul li {
+						margin: 0.3rem;
+						display: inline-block;
+						width: auto;
+						border-bottom: 0;
+					}
+				}
 			}
 		}
 	}
@@ -53,9 +55,15 @@
 			justify-content: center;
 
 			li{
-				margin-bottom: 1rem;
+				width: 100%;
+    			margin: .2rem 0;
 			}
 		}
+	}
+
+	/*=== CONTENT ===*/
+	.main-content{
+		margin-top: 0;
 	}
 
 }

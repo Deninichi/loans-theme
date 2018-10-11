@@ -33,10 +33,11 @@ h2, .h2{
 }
 
 a{
+	color: $pink;
 	transition: color .3s;
 
 	&:hover{
-		color: $pink;
+		color: $heading-color;
 	}
 }
 
@@ -53,6 +54,11 @@ header{
     	text-transform: uppercase;
     	font-weight: 700;
     	font-size: 1.5rem;
+		
+		a{
+			color: $pink;
+			text-decoration: none;
+		}
 
     	span{
     		font-weight: 400;
@@ -155,6 +161,11 @@ header{
 	h1{
 		margin-right: .7rem;
 	}
+}
+
+.description{
+	max-width: 1200px;
+    margin: auto;
 }
 
 .post-modify-date{
@@ -279,7 +290,8 @@ header{
 footer{
 	border-top: 5px solid $dark-green;
 	margin-top: 4rem;
-	
+	margin-bottom: 1rem;
+
 	.footer-menu{
 		margin: 2.75rem 0;
 
@@ -332,6 +344,13 @@ footer{
 	}
 }
 
+
+/*======== SINGLE PAGE ========*/
+.wrap{
+	margin-top: 6rem;
+}
+
+
 /*======== ELEMENTS ========*/
 .add-strike-through {
 	position: relative;
@@ -355,11 +374,62 @@ footer{
 	}
 }
 
+.load-more{
+	color: $dark-green;
+	cursor: pointer;
+	transition: all .3s;
+
+	&:hover{
+		color: $pink;
+
+		span::before{
+			
+			background-image: radial-gradient($pink 15%, transparent 16%), radial-gradient($pink 15%, transparent 16%);
+		}
+	}
+
+	span{
+		display: block;
+		font-weight: 600;
+		margin-top: 5px;
+		position: relative;
+
+		&::before{
+			content: '';
+			height: 6px;
+			width: 45px;
+			background-image: radial-gradient($dark-green 15%, transparent 16%), radial-gradient($dark-green 15%, transparent 16%);
+			background-size: .5em .5em;
+			background-position: 0 0, .5em .5em;
+			position: absolute;
+			bottom: 1px;
+		}
+	}
+
+	i{
+		font-size: 36px;
+	}
+}
 
 /*======== SECTIONS ========*/
 .content-section{
 	padding: 3.3rem 1rem;
 }
+
+
+/*=== Icon boxes ===*/
+.icon-boxes h5 a{
+	color: $heading-color;
+	text-decoration: none;
+	transition: color .3s;
+
+	&:hover{
+		color: $pink;
+	}
+}
+
+
+/*=== Collapse section ===*/
 .collapse-section{
 	padding: 3.3rem 1rem;
 	border-bottom: 1px solid $light-grey;

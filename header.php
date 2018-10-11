@@ -13,7 +13,7 @@
 
 	<header>
 		<div class="logo">
-			Some<span>logo</span>
+			<a href="/">Some<span>logo</span></a>
 		</div>
 		<nav class="main-menu nav-primary navbar navbar-animated navbar-expand-xl">
 
@@ -32,7 +32,7 @@
 				'menu_class'      => 'navbar-nav ml-auto',
 			) ); ?>
 		</nav>
-		<div class="top-socials">
+		<div class="top-socials d-none d-xl-block">
 			<ul class="d-flex align-items-center">
 				<li><a href="#"><i class="fab fa-youtube"></a></i></li>
 				<li><a href="#"><img src="<?php echo get_template_directory_uri() . '/assets/images/social-box.png'; ?>" alt=""></a></li>
