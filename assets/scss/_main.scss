@@ -181,18 +181,15 @@ header{
 	}
 }
 
-.main-content{
-	margin-top: 6rem;
-}
 
 
 /*======== POST LOOP ========*/
-.post-loop-wrap{
+.lender-loop-wrap{
 	background-color: white;
     box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 0.55);
     color: #171717;
 	
-	.post-content{
+	.lender-content{
 		padding: 20px 40px 20px;
 	}
 
@@ -210,26 +207,6 @@ header{
 				font-weight: 600;
 			}
 		}
-    }
-
-    .actions{
-		border-top: 1px solid #eee;
-    	padding: 1.25rem 2rem;
-
-    	.btn{
-    		display: block;
-		    background: $pink;
-		    border-radius: 20px;
-		    color: white;
-		    text-transform: uppercase;
-		    font-weight: 600;
-    	}
-    	.btn-link{
-    		display: inline-block;
-		    margin-top: 1rem;
-		    font-weight: 500;
-		    color: $dark-green;
-    	}
     }
 
     .bottom-desc{
@@ -350,6 +327,36 @@ footer{
 	margin-top: 6rem;
 }
 
+.general-info {
+
+	.info{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+		span{
+			display: block;
+
+			&:last-child{
+				font-weight: 500;
+			}
+		}
+	}
+
+	.bottom-desc{
+		background-color: $dark-green;
+		color: white;
+		text-align: center;
+		padding: .3rem;
+	}
+
+	.actions{
+		padding: 0;
+	}
+
+}
+
+
 
 /*======== ELEMENTS ========*/
 .add-strike-through {
@@ -383,7 +390,7 @@ footer{
 		color: $pink;
 
 		span::before{
-			
+
 			background-image: radial-gradient($pink 15%, transparent 16%), radial-gradient($pink 15%, transparent 16%);
 		}
 	}
@@ -411,11 +418,67 @@ footer{
 	}
 }
 
-/*======== SECTIONS ========*/
-.content-section{
-	padding: 3.3rem 1rem;
+
+.actions{
+	padding: 1.25rem 2rem;
+
+	.btn{
+		display: block;
+	    background: $pink;
+	    border-radius: 20px;
+	    color: white;
+	    text-transform: uppercase;
+	    font-weight: 600;
+	}
+	.btn-link{
+		display: inline-block;
+	    margin-top: 1rem;
+	    font-weight: 500;
+	    color: $dark-green;
+	}
 }
 
+
+.ul-inline{
+	display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    height: 100%;
+
+	li{
+		display: inline-block;
+	}
+}
+
+/*======== SECTIONS ========*/
+.content-section{
+	padding: 1.3rem 1rem;
+	margin: 2rem 0px;
+}
+
+.row-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
+
+.white-shadow{
+	background-color: white;
+    box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 0.55);
+}
+
+.bb{
+	border-bottom: 1px solid $light-grey;
+}
+
+.bt{
+	border-top: 1px solid $light-grey;
+}
+
+// Simple content
+.simple-content{
+	border: 1px solid $light-grey;
+}
 
 /*=== Icon boxes ===*/
 .icon-boxes h5 a{

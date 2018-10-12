@@ -1,52 +1,57 @@
-<article class="post-loop col-12 col-md-4 mb-4">
-	<div class="post-loop-wrap">
-		<div class="post-image">
-			<a href="<?php the_permalink(); ?>"><img src="/wp-content/uploads/2018/10/logo-1.png" alt=""></a>
+<?php
+
+	$logo = get_field( 'lender_logo' );
+	$checkboxes = get_field( 'lender_checkboxes' );
+
+?>
+
+<article class="lender-loop col-12 col-md-4 mb-4">
+	<div class="lender-loop-wrap">
+		<div class="lender-image">
+			<a href="<?php the_permalink(); ?>"><img src="<?php echo $logo['url']; ?>" alt=""></a>
 		</div>
-		<div class="post-content">
+		<div class="lender-content">
 			<table>
 				<tbody>
 					<tr>
 						<td>Lägstabelopp</td>
-						<td>5 000 kr</td>
+						<td><?php the_field( 'lender_lagstabelopp' ); ?> kr</td>
 					</tr>
 					<tr>
 						<td>Högstabelopp</td>
-						<td>1 000 000 kr</td>
+						<td><?php the_field( 'lender_hogstabelopp' ); ?> kr</td>
 					</tr>
 					<tr>
 						<td>Avgift</td>
-						<td>595 kr</td>
+						<td><?php the_field( 'lender_avgift' ); ?> kr</td>
 					</tr>
 					<tr>
 						<td>Ränta</td>
-						<td>10,81 – 30,93%</td>
+						<td><?php the_field( 'lender_ranta' ); ?></td>
 					</tr>
-					<tr>
-						<td>Utan UC</td>
-						<td><i class="far fa-check-circle"></i></td>
-					</tr>
-					<tr>
-						<td>Betalnsanm. Ok</td>
-						<td><i class="far fa-times-circle"></i></td>
-					</tr>
-					<tr>
-						<td>Kontokredit</td>
-						<td><i class="far fa-check-circle"></i></td>
-					</tr>
+
+					<?php foreach ( $checkboxes as $checkbox ): ?>
+						
+						<tr>
+							<td><?php echo $checkbox['text']; ?></td>
+							<td><?php echo ( $checkbox['is_checked'][0] == 1 ) ? '<i class="far fa-check-circle"></i>' : '<i class="far fa-times-circle"></i>'; ?></td>
+						</tr>
+
+					<?php endforeach ?>
+					
 					<tr>
 						<td>Åldersgräns</td>
-						<td>22 år</td>
+						<td><?php the_field( 'lender_aldersgrans' ); ?> år</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
-		<div class="actions">
+		<div class="actions bt">
 			<a class="btn" href="">Läsmer</a>
 			<a class="btn-link" href="">Mer om Advisa</a>
 		</div>
 		<div class="bottom-desc">
-			198 valde Freedom finance
+			<?php the_field( 'lebder_freedom_finance' ); ?> valde Freedom finance
 		</div>
 	</div>
 </article><!-- .post-loop -->
