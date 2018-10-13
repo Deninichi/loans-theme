@@ -21,6 +21,8 @@ h1, .h1{
 h2, .h2{
 	font-size: 2rem;
 	color: $heading-color;
+	font-weight: 400;
+
 }
 
 @media (min-width: 1024px){
@@ -441,25 +443,30 @@ footer{
 
 .ul-inline{
 	display: flex;
-    justify-content: space-between;
     margin-bottom: 0;
     height: 100%;
+	padding: 0;
 
 	li{
 		display: inline-block;
+		margin-left: 1rem;
+
+		&:first-child{
+			margin-left: 0;
+		}
 	}
 }
 
 /*======== SECTIONS ========*/
 .content-section{
-	padding: 1.3rem 1rem;
+	padding: 2rem 2rem;
 	margin: 2rem 0px;
 }
 
 .row-wrapper{
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0;
+	padding: 1rem;
 }
 
 .white-shadow{
@@ -475,7 +482,7 @@ footer{
 	border-top: 1px solid $light-grey;
 }
 
-// Simple content
+/*=== Simple Content ===*/
 .simple-content{
 	border: 1px solid $light-grey;
 }
@@ -543,6 +550,225 @@ footer{
 		}
 	}
 }
+
+/*=== Work days ===*/
+.work-days{
+
+	.days-wrap{
+		padding: 2rem 2rem 0;
+
+		table{
+			width: 100%;
+			border-collapse: separate;
+			border-spacing: 0 3px;
+			
+			td{
+				text-align: center;
+				padding: .3rem;
+			}
+	    }
+
+		.work{
+
+			td:first-child{
+				width: 40%;
+				background-color: $dark-green;
+				color: white;
+			}
+			td:last-child{
+				border: 1px solid $light-grey;
+				font-weight: 500;
+			}
+		}
+
+		.weekend{
+			
+			td:first-child{
+				width: 40%;
+				background-color: $pink;
+				color: white;
+			}
+			td:last-child{
+				border: 1px solid $light-grey;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+
+/*=== Contacts ===*/
+.contacts-section-wrap{
+	position: relative;
+    z-index: 90;
+	margin-bottom: 5rem;
+
+	.contacts-section{
+		padding: 2rem;
+		padding-bottom: 3rem;
+		z-index: 90;
+    	position: relative;
+
+		table{
+			width: 100%;
+			color: white;
+			
+			td{
+				padding: 3px;
+
+				a{
+					color: white;
+					text-decoration: underline;
+					transition: opacity .3s;
+
+					&:hover{
+						opacity: .75;
+					}
+				}
+			}
+			
+		}
+
+		.contacts-logo-wrap{
+			text-align: center;
+		    margin-bottom: -8rem;
+		    margin-top: 2rem;
+		}
+	}
+
+	&::after{
+		content: '';
+	    width: 100%;
+	    height: 5rem;
+	    background: white;
+	    box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 0.55);
+	    position: absolute;
+	    left: 0;
+	    bottom: -5rem;
+	    z-index: 0;
+	}
+}
+
+/*=== Pros and Cons ===*/
+.pros-cons{
+
+	.items{
+		padding: 1.2rem;
+		margin-bottom: 1rem;
+
+		ul{
+			margin: 0;
+
+			li{
+				margin-bottom: .75rem;
+				color: $heading-color;
+				font-weight: 500;
+
+				i{
+				    color: white;
+				    padding: .5rem;
+				    margin-right: 1rem;
+				}
+
+				&:last-child{
+					margin: 0;
+				}
+			}
+		}
+		
+
+		&.pro-wrap{
+			border: 3px solid $dark-green;
+				
+			i{
+				background: $dark-green;
+			}
+		}
+		&.con-wrap{
+			border: 3px solid $pink;
+			
+			i{
+				background: $pink;
+				padding: .5rem .7rem;
+			}
+		}
+
+		ul{
+			padding: 0;
+			list-style: none;
+		}
+	}
+}
+
+
+/*=== Advanced Content ===*/
+.advanced-content{
+
+	.headings-list{
+
+		padding-bottom: 1rem;
+		margin-bottom: 2rem;
+		border-bottom: 1px solid $dark-green;
+
+		ul{
+			padding: 0;
+			list-style: none;
+
+			li{
+				margin-bottom: .75rem;
+				color: $heading-color;
+				font-weight: 500;
+
+				span{
+					cursor: pointer;
+					transition: all .3s;
+
+					i{
+						margin: 0 1.5rem 0 .7rem;
+					}
+
+					img{
+						width: 20px;
+						margin-right: 1rem;
+					}
+
+					svg{
+						width: 20px;
+						margin-right: 1rem;
+
+						& path{
+							fill: $pink;
+						}
+					}
+
+					&:hover{
+						color: $pink;
+					}
+				}
+			}
+		}
+	}
+
+	.content-item{
+		
+		.heading{
+
+			svg{
+				width: 30px;
+				height: 30px;
+
+				& path{
+					fill: $pink;
+				}
+			}
+
+			h2{
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
 
 @media (min-width: 768px){
 	.collapse-section{

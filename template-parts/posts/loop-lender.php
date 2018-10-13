@@ -47,7 +47,7 @@
 			</table>
 		</div>
 		<div class="actions bt">
-			<a class="btn" href="">Läsmer</a>
+			<a class="btn" href="<?php the_field( 'lender_cta_button_url' ); ?>"><?php the_field( 'lender_cta_button_text' ); ?></a>
 			<a class="btn-link" href="">Mer om Advisa</a>
 		</div>
 		<div class="bottom-desc">

@@ -49,6 +49,9 @@ $wikipedia-color: #2f495a;
 	color: $wikipedia-color !important;
 }
 
+.color-border{
+	border-color: $light-grey !important;
+}
 
 .fa-check-circle {
 	color: $dark-green;
@@ -60,7 +63,10 @@ $wikipedia-color: #2f495a;
 
 /* Backgrounds */
 .bg-white{
-	background-color: #fff;
+	background-color: #fff !important;
+}
+.bg-green{
+	background-color: $dark-green !important;
 }
 .bg-grey{
 	background-color: $grey !important;

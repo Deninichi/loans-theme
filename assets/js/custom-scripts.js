@@ -47,6 +47,17 @@
 
 		});
 
+
+		// Advanced content scroll
+		$( '.advanced-content .headings-list ul li' ).click(function(event) {
+			var id = $(this).attr( 'id' );
+
+			$('html, body').animate({
+		        scrollTop: $('.content-item[content-id="' + id + '"]').offset().top
+		    }, 500);
+
+		});
+
 	});
 
 
