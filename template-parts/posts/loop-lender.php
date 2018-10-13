@@ -5,7 +5,7 @@
 
 ?>
 
-<article class="lender-loop col-12 col-md-4 mb-4">
+<article class="lender-loop col-12 col-md-6 col-lg-4 mb-4">
 	<div class="lender-loop-wrap">
 		<div class="lender-image">
 			<a href="<?php the_permalink(); ?>"><img src="<?php echo $logo['url']; ?>" alt=""></a>
@@ -30,14 +30,16 @@
 						<td><?php the_field( 'lender_ranta' ); ?></td>
 					</tr>
 
-					<?php foreach ( $checkboxes as $checkbox ): ?>
+					<?php if ( $checkboxes ): ?>
+						<?php foreach ( $checkboxes as $checkbox ): ?>
 						
-						<tr>
-							<td><?php echo $checkbox['text']; ?></td>
-							<td><?php echo ( $checkbox['is_checked'][0] == 1 ) ? '<i class="far fa-check-circle"></i>' : '<i class="far fa-times-circle"></i>'; ?></td>
-						</tr>
+							<tr>
+								<td><?php echo $checkbox['text']; ?></td>
+								<td><?php echo ( $checkbox['is_checked'][0] == 1 ) ? '<i class="far fa-check-circle"></i>' : '<i class="far fa-times-circle"></i>'; ?></td>
+							</tr>
 
-					<?php endforeach ?>
+						<?php endforeach ?>
+					<?php endif ?>
 					
 					<tr>
 						<td>Åldersgräns</td>

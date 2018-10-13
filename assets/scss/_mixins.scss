@@ -71,6 +71,10 @@ $wikipedia-color: #2f495a;
 .bg-grey{
 	background-color: $grey !important;
 }
+.white-shadow{
+	background-color: white;
+    box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 0.55);
+}
 
 
 $easing-cubic-bezier-speed: 200ms;
@@ -93,6 +97,10 @@ $easing-cubic-bezier: cubic-bezier(0.7, 0, 0, 0.7);
 }
 @mixin purple-diagonal-gradient {
 	background-image: linear-gradient(left top, right bottom, #5031a9, #5031a9);
+}
+@mixin white-shadow{
+	background-color: white;
+    box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 0.55);
 }
 @mixin addClearfix {
 	&:after {

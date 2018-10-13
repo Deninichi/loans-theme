@@ -19,19 +19,22 @@ get_header(); ?>
 		<h1><?php loans_the_title(); ?></h1>
 		<img src="<?php echo $title_icon ?>" alt="">
 	</div>
-	<p class="description has-read-more text-center">
-		Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
-	</p>
+	<div class="description has-read-more text-center">
+		<?php loans_the_description() ?>
+	</div>
 
 	<div class="post-modify-date add-strike-through mt-5 mb-3">
 		<span class="text-wrapper">
 			<i class="fas fa-clock"></i>
 			<?php loans_the_post_date(); ?>
 		</span>
+		<div class="breadcrumbs">
+			<?php the_breadcrumbs(); ?>
+		</div>
 	</div>
 
-	<div class="wrap row">
-		<div id="primary" class="main-content col-12 col-lg-8 col-xl-9">
+	<div class="wrap row justify-content-center">
+		<div id="primary" class="main-content col-12 col-lg-12 col-xl-9">
 			<main id="main" class="content" role="main">
 
 				<?php

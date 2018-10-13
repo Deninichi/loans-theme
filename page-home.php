@@ -30,14 +30,14 @@ $wp_query = new WP_Query( $args );
 		</span>
 	</div>
 	
-	<div class="main-content row">
-		<div id="content" class="content col-12 col-lg-8 col-xl-9">
+	<div class="main-content row justify-content-center">
+		<div id="content" class="content col-12 col-lg-12 col-xl-9">
 			
 			<?php get_template_part( 'template-parts/icon-boxes-part' ) ?>
 
 			<?php get_template_part( 'template-parts/collapse-section-part' ) ?>
 
-			<section class="posts content-section text-center">
+			<section class="posts content-section text-center pr-0 pl-0">
 				<h2 class="posts-heading mb-3">Alla Positioner</h2>
 				<p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.<br>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus.</p>
 				<div class="row posts-loop mt-5">
@@ -60,7 +60,7 @@ $wp_query = new WP_Query( $args );
 							endwhile;
 
 						endif;
-						?>
+					?>
 					
 				</div>
 

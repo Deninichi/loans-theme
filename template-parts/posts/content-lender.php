@@ -1,7 +1,9 @@
 <?php
 
-	$logo 		= get_field( 'lender_logo' );
-	$checkboxes = get_field( 'lender_checkboxes' );
+	$logo 			= get_field( 'lender_logo' );
+	$checkboxes 	= get_field( 'lender_checkboxes' );
+	$related_posts  = get_field( 'lender_related_lenders' );
+	$related_posts  = $related_posts['global_related_lenders'];
 ?>	
 
 <article class="lender">
@@ -9,7 +11,7 @@
 	<section class="general-info white-shadow">
 		
 		<div class="row-wrapper bb">
-			<div class="logo-wrap col-12 col-md-3">
+			<div class="logo-wrap col-12 col-md-3 d-flex align-items-center justify-content-center">
 				<?php if ( isset( $logo['url'] ) ): ?>
 					<div class="logo">
 						<img src="<?php echo $logo['url']; ?>" alt="">
@@ -90,5 +92,52 @@
 	<?php get_template_part( 'template-parts/pros-cons-section-part' ); ?>
 
 	<?php get_template_part( 'template-parts/advanced-content-section-part' ); ?>
+
+	<?php get_template_part( 'template-parts/gallery-section-part' ); ?>
+
+	<?php if ( ! empty($related_posts) ): ?>
+		
+	
+		<section class="posts content-section text-center bt mt-0 mb-3 pl-0 pr-0">
+			<div class="row posts-loop mt-3">
+
+				<?php
+					$args = array(
+						'post_type'   => 'lender',
+						'post__in' 	  => $related_posts,
+						'numberposts' => -1
+					);
+					$wp_query = new WP_Query( $args );
+
+
+					if ( $wp_query->have_posts() ) :
+
+						/* Start the Loop */
+						while ( $wp_query->have_posts() ) : $wp_query->the_post();
+
+							/*
+							 * Include the Post-Format-specific template for the content.
+							 * If you want to override this in a child theme, then include a file
+							 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+							 */
+
+							get_template_part( 'template-parts/posts/loop', get_post_type() );
+
+						endwhile;
+						wp_reset_query();
+					endif;
+				?>
+				
+			</div>
+
+			<div class="load-more">
+				<i class="fas fa-sync"></i>
+				<span><?php _e( 'MORE', 'loans' ); ?></span>
+			</div>
+
+		</section>
+	<?php endif ?>
+
+	<?php get_template_part( 'template-parts/tags-section-part' ); ?>
 
 </article>

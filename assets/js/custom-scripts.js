@@ -29,10 +29,20 @@
 
 
 		// Load more
+		if ( $('.posts article').length < 3 ) {
+			$('.posts .load-more').remove();
+		}
+
+
+		var showPostsNum = 3;
+		if ( $( window ).width() <= 992 ) {
+			showPostsNum = 4; 
+		}
+		
 		$('.posts article').each(function(index, el) {
-			if ( index > 2 ) {
+			if ( index > ( showPostsNum - 1 ) ) {
 				$(this).hide();
-			};
+			}
 		});
 
 		$('.posts .load-more i, posts .load-more span').click(function(event) {
@@ -56,6 +66,21 @@
 		        scrollTop: $('.content-item[content-id="' + id + '"]').offset().top
 		    }, 500);
 
+		});
+
+
+		// Load full image
+		$( '.gallery-section .image-wrap' ).click(function(event) {
+			var fullImageUrl = $(this).find('img').attr('full-image');
+
+			$( '.full-image-container img' ).attr( 'src', fullImageUrl );
+			$( '.full-image-container' ).show();
+			$( '.full-image-overlay' ).show();
+		});
+
+		$( '.full-image-overlay' ).click(function(event) {
+			$( '.full-image-container' ).hide();
+			$( '.full-image-overlay' ).hide();
 		});
 
 	});
