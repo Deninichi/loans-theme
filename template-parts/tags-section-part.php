@@ -1,6 +1,11 @@
 <?php 
 
+
 	$tags = get_the_tags();
+
+	if ( ! $tags ) {
+		return false;
+	}
 
 ?>
 

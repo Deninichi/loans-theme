@@ -29,7 +29,7 @@
 
 
 		// Load more
-		if ( $('.posts article').length < 3 ) {
+		if ( $('.posts article').length <= 3 ) {
 			$('.posts .load-more').remove();
 		}
 
@@ -63,7 +63,7 @@
 			var id = $(this).attr( 'id' );
 
 			$('html, body').animate({
-		        scrollTop: $('.content-item[content-id="' + id + '"]').offset().top
+		        scrollTop: $('.content-item[content-id="' + id + '"]').offset().top - 50
 		    }, 500);
 
 		});
@@ -91,7 +91,7 @@
 		paragraphs.last().find('.read-more').remove();
 
 		if ( paragraphs.length > 2 ) {
-			paragraphs.eq(1).append(' <a class="read-more custom-underline closed" href=""><span class="text-wrapper">Läs mer</span> <span class="icon-wrapper icon-right"><i class="fas fa-angle-down"></i></span></a>')
+			paragraphs.eq(1).append(' <a class="read-more custom-underline closed" href=""><span class="text-wrapper">Läs mer</span> <span class="icon-wrapper icon-right"><i class="fas fa-arrow-circle-right"></i></span></a>')
 		}
 
 		paragraphs.each(function(index, el) {
@@ -104,7 +104,7 @@
 	function openReadMore( paragraphs, readmore ){
 		readmore.remove();
 		paragraphs.show();
-		paragraphs.last().append(' <a class="read-more custom-underline opened" href=""><span class="text-wrapper">Visa mindre</span> <span class="icon-wrapper icon-right"><i class="fas fa-angle-up"></i></span></a>')
+		paragraphs.last().append(' <a class="read-more custom-underline opened" href=""><span class="text-wrapper">Visa mindre</span> <span class="icon-wrapper icon-right"><i class="fas fa-arrow-circle-up"></i></span></a>')
 
 	}
 

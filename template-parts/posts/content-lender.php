@@ -4,6 +4,7 @@
 	$checkboxes 	= get_field( 'lender_checkboxes' );
 	$related_posts  = get_field( 'lender_related_lenders' );
 	$related_posts  = $related_posts['global_related_lenders'];
+
 ?>	
 
 <article class="lender">
@@ -102,18 +103,21 @@
 			<div class="row posts-loop mt-3">
 
 				<?php
+					global $post;
+					$tmp_post = $post;
+
 					$args = array(
 						'post_type'   => 'lender',
 						'post__in' 	  => $related_posts,
 						'numberposts' => -1
 					);
-					$wp_query = new WP_Query( $args );
+					$related_query = new WP_Query( $args );
 
 
-					if ( $wp_query->have_posts() ) :
+					if ( $related_query->have_posts() ) :
 
 						/* Start the Loop */
-						while ( $wp_query->have_posts() ) : $wp_query->the_post();
+						while ( $related_query->have_posts() ) : $related_query->the_post();
 
 							/*
 							 * Include the Post-Format-specific template for the content.
@@ -124,7 +128,9 @@
 							get_template_part( 'template-parts/posts/loop', get_post_type() );
 
 						endwhile;
-						wp_reset_query();
+
+						$post = $tmp_post;
+						wp_reset_postdata();
 					endif;
 				?>
 				
