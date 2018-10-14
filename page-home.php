@@ -38,8 +38,8 @@ $wp_query = new WP_Query( $args );
 			<?php get_template_part( 'template-parts/collapse-section-part' ) ?>
 
 			<section class="posts content-section text-center pr-0 pl-0">
-				<h2 class="posts-heading mb-3">Alla Positioner</h2>
-				<p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.<br>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus.</p>
+				<h2 class="posts-heading mb-3"><?php the_field( 'homepage_lenders_list_heading' ); ?></h2>
+				<p><?php the_field( 'homepage_lenders_list_description' ); ?></p>
 				<div class="row posts-loop mt-5">
 
 					<?php
@@ -66,7 +66,7 @@ $wp_query = new WP_Query( $args );
 
 				<div class="load-more">
 					<i class="fas fa-sync"></i>
-					<span>MORE</span>
+					<span><?php _e( 'MORE', 'loans' ); ?></span>
 				</div>
 
 			</section>

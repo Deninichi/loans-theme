@@ -14,19 +14,19 @@
 			<table>
 				<tbody>
 					<tr>
-						<td>Lägstabelopp</td>
+						<td><?php _e( 'Lägstabelopp', 'loans' ); ?></td>
 						<td><?php the_field( 'lender_lagstabelopp' ); ?> kr</td>
 					</tr>
 					<tr>
-						<td>Högstabelopp</td>
+						<td><?php _e( 'Högstabelopp', 'loans' ); ?></td>
 						<td><?php the_field( 'lender_hogstabelopp' ); ?> kr</td>
 					</tr>
 					<tr>
-						<td>Avgift</td>
+						<td><?php _e( 'Avgift', 'loans' ); ?></td>
 						<td><?php the_field( 'lender_avgift' ); ?> kr</td>
 					</tr>
 					<tr>
-						<td>Ränta</td>
+						<td><?php _e( 'Ränta', 'loans' ); ?></td>
 						<td><?php the_field( 'lender_ranta' ); ?></td>
 					</tr>
 
@@ -42,7 +42,7 @@
 					<?php endif ?>
 					
 					<tr>
-						<td>Åldersgräns</td>
+						<td><?php _e( 'Åldersgräns', 'loans' ); ?></td>
 						<td><?php the_field( 'lender_aldersgrans' ); ?> år</td>
 					</tr>
 				</tbody>
@@ -53,7 +53,7 @@
 			<a class="btn-link" href="">Mer om Advisa</a>
 		</div>
 		<div class="bottom-desc">
-			<?php the_field( 'lebder_freedom_finance' ); ?> valde Freedom finance
+			<?php the_field( 'lebder_freedom_finance' ); ?> <?php _e( 'valde Freedom finance', 'loans' ); ?>
 		</div>
 	</div>
 </article><!-- .post-loop -->

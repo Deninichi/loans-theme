@@ -11,7 +11,7 @@
 
 	<header>
 		<div class="logo">
-			<a href="/">Some<span>logo</span></a>
+			<a href="/"><?php the_field( 'loans_logo', 'option' ); ?></a>
 		</div>
 		<nav class="main-menu nav-primary navbar navbar-animated navbar-expand-xl">
 

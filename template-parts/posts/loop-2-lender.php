@@ -17,19 +17,19 @@
 			<table>
 				<tbody>
 					<tr>
-						<td>Lägstabelopp</td>
+						<td><?php _e( 'Lägstabelopp', 'loans' ); ?></td>
 						<td><?php the_field( 'lender_lagstabelopp' ); ?> kr</td>
 					</tr>
 					<tr>
-						<td>Högstabelopp</td>
+						<td><?php _e( 'Högstabelopp', 'loans' ); ?></td>
 						<td><?php the_field( 'lender_hogstabelopp' ); ?> kr</td>
 					</tr>
 					<tr>
-						<td>Avgift</td>
+						<td><?php _e( 'Avgift', 'loans' ); ?></td>
 						<td><?php the_field( 'lender_avgift' ); ?> kr</td>
 					</tr>
 					<tr>
-						<td>Ränta</td>
+						<td><?php _e( 'Ränta', 'loans' ); ?></td>
 						<td><?php the_field( 'lender_ranta' ); ?></td>
 					</tr>
 
@@ -45,8 +45,8 @@
 					<?php endif ?>
 					
 					<tr>
-						<td><?php _e( 'Åldersgräns', 'lender' ); ?></td>
-						<td><?php the_field( 'lender_aldersgrans' ); ?> <?php _e( 'år', 'lender' ); ?></td>
+						<td><?php _e( 'Åldersgräns', 'loans' ); ?></td>
+						<td><?php the_field( 'lender_aldersgrans' ); ?> år</td>
 					</tr>
 				</tbody>
 			</table>

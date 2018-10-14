@@ -13,7 +13,7 @@
 						</div>
 
 						<div class="footer-copy">
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+							<?php the_field( 'loans_footer_text', 'option' ); ?>
 						</div>
 					</div>
 					<div class="col-12 col-lg-3 mt-4 mt-lg-0 d-flex flex-column justify-content-between align-items-center">
@@ -21,7 +21,7 @@
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/dmca.png'; ?>" alt="">
 						</div>
 						<div class="copyright">
-							© All Rights Reserved
+							<?php the_field( 'loans_footer_copyright', 'option' ); ?>
 						</div>
 					</div>
 				</div>
