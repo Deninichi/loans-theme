@@ -83,6 +83,33 @@
 			$( '.full-image-overlay' ).hide();
 		});
 
+
+		// Lender loop index
+		$( '.lender-loop' ).each(function(index, el) {
+			$(this).find('.lender-number span').text( index + 1 );
+		});
+
+
+		// Lender count 
+		$( '.btn.lender-count' ).click(function(event) {
+			event.preventDefault();
+
+			var lender = $(this).closest('article')
+			var lenderId = $(this).attr( 'lender-id' );
+
+			$.post(
+				loans.ajax, 
+				{
+					action: 'increase_lender',
+					lender_id: lenderId
+				}, 
+				function(data, textStatus, xhr) {
+
+					lender.find('.bottom-desc').first().text( data + ' valde Freedom finance' );
+
+				});
+			});
+
 	});
 
 

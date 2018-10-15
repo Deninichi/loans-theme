@@ -49,7 +49,7 @@ get_header(); ?>
 				<?php
 
 				if ( $tag_query->have_posts() ) :
-
+					
 					/* Start the Loop */
 					while ( $tag_query->have_posts() ) : $tag_query->the_post();
 

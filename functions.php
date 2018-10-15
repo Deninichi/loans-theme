@@ -13,7 +13,7 @@ function loans_enqueue_scripts() {
   wp_enqueue_script('loans-script', get_template_directory_uri() . '/assets/js/custom-scripts.js', array('jquery'), '_bld_1539521380145', true );
 
   wp_localize_script( 'loans-script', 'loans', array(
-
+      'ajax' => admin_url('admin-ajax.php')
    ) );
 }
 add_action( 'wp_enqueue_scripts', 'loans_enqueue_scripts' );
