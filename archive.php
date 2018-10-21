@@ -60,6 +60,8 @@ get_header(); ?>
 						 */
 						get_template_part( 'template-parts/posts/content', get_post_type() );
 
+						
+
 					endwhile;
 
 				endif;

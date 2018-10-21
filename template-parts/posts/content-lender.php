@@ -74,7 +74,7 @@
 			</div>
 			<div class="cta-btn col-12 col-md-3">
 				<div class="actions">
-					<a class="btn lender-count" lender-id="<?php echo get_the_ID(); ?>" href="<?php the_field( 'lender_cta_button_url' ); ?>"><?php the_field( 'lender_cta_button_text' ); ?></a>
+					<a class="btn lender-count" data-lender-id="<?php echo get_the_ID(); ?>" href="<?php the_field( 'lender_cta_button_url' ); ?>"><?php the_field( 'lender_cta_button_text' ); ?></a>
 				</div>
 			</div>
 		</div>

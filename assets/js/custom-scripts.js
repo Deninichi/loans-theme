@@ -83,29 +83,26 @@
 			$( '.full-image-overlay' ).hide();
 		});
 
-
-		// Lender loop index
 		$( '.lender-loop' ).each(function(index, el) {
-			$(this).find('.lender-number span').text( index + 1 );
+			$(this).find( '.lender-number span' ).text( index + 1 );
 		});
 
 
-		// Lender count 
-		$( '.btn.lender-count' ).click(function(event) {
+		$( '.lender-count' ).click(function(event) {
 			event.preventDefault();
 
-			var lender = $(this).closest('article')
-			var lenderId = $(this).attr( 'lender-id' );
+			var lender = $(this).closest('.lender-loop')
+			var lenderId = $(this).attr( 'data-lender-id' );
 
 			$.post(
 				loans.ajax, 
 				{
-					action: 'increase_lender',
+					action: 'lender_count',
 					lender_id: lenderId
 				}, 
 				function(data, textStatus, xhr) {
-
-					lender.find('.bottom-desc').first().text( data + ' valde Freedom finance' );
+					
+					lender.find('.bottom-desc').text( data + ' valde Freedom finance' );
 
 				});
 			});

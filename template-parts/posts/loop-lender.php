@@ -49,7 +49,7 @@
 			</table>
 		</div>
 		<div class="actions bt">
-			<a class="btn lender-count" lender-id="<?php echo get_the_ID(); ?>" href="<?php the_field( 'lender_cta_button_url' ); ?>"><?php the_field( 'lender_cta_button_text' ); ?></a>
+			<a class="btn lender-count" data-lender-id="<?php echo get_the_ID(); ?>" href="<?php the_field( 'lender_cta_button_url' ); ?>"><?php the_field( 'lender_cta_button_text' ); ?></a>
 			<a class="btn-link" href="<?php the_field( 'lender_cta_link_url' ); ?>"><?php the_field( 'lender_cta_link_text' ); ?></a>
 		</div>
 		<div class="bottom-desc">
