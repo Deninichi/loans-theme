@@ -36,19 +36,19 @@
 					$socials = get_field( 'loans_socials', 'option' );
 				?>
 				<?php if ( $socials['youtube'] ): ?>
-					<li><a href="<?php echo $socials['youtube'] ?>"><i class="fab fa-youtube"></i></a></li>
+					<li><a href="<?php echo $socials['youtube'] ?>" rel="nofollow"><i class="fab fa-youtube"></i></a></li>
 				<?php endif ?>
 				
 				<?php if ( $socials['box'] ): ?>
-					<li><a href="<?php echo $socials['box'] ?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/social-box.png'; ?>" alt=""></a></li>
+					<li><a href="<?php echo $socials['box'] ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri() . '/assets/images/social-box.png'; ?>" alt=""></a></li>
 				<?php endif ?>
 				
 				<?php if ( $socials['google'] ): ?>
-					<li><a href="<?php echo $socials['google'] ?>"><i class="fab fa-google-plus-g"></i></a></li>
+					<li><a href="<?php echo $socials['google'] ?>" rel="nofollow"><i class="fab fa-google-plus-g"></i></a></li>
 				<?php endif ?>
 				
 				<?php if ( $socials['google_drive'] ): ?>
-					<li><a href="<?php echo $socials['google_drive'] ?>"><i class="fab fa-google-drive"></i></a></li>
+					<li><a href="<?php echo $socials['google_drive'] ?>" rel="nofollow"><i class="fab fa-google-drive"></i></a></li>
 				<?php endif ?>
 			</ul>
 		</div>

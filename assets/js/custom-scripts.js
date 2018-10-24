@@ -29,33 +29,33 @@
 
 
 		// Load more
-		if ( $('.posts article').length <= 3 ) {
-			$('.posts .load-more').remove();
-		}
+		// if ( $('.posts article').length <= 3 ) {
+		// 	$('.posts .load-more').remove();
+		// }
 
 
-		var showPostsNum = 3;
-		if ( $( window ).width() <= 992 ) {
-			showPostsNum = 4; 
-		}
+		// var showPostsNum = 3;
+		// if ( $( window ).width() <= 992 ) {
+		// 	showPostsNum = 4; 
+		// }
 		
-		$('.posts article').each(function(index, el) {
-			if ( index > ( showPostsNum - 1 ) ) {
-				$(this).hide();
-			}
-		});
+		// $('.posts article').each(function(index, el) {
+		// 	if ( index > ( showPostsNum - 1 ) ) {
+		// 		$(this).hide();
+		// 	}
+		// });
 
-		$('.posts .load-more i, posts .load-more span').click(function(event) {
-			event.preventDefault();
+		// $('.posts .load-more i, posts .load-more span').click(function(event) {
+		// 	event.preventDefault();
 
-			let container = $(this).closest('.posts');
-			container.find('article:hidden:lt(3)').show();
+		// 	let container = $(this).closest('.posts');
+		// 	container.find('article:hidden:lt(3)').show();
 
-			if ( container.find('article:hidden').length == 0 ) {
-				$(this).closest('.load-more').hide();
-			};
+		// 	if ( container.find('article:hidden').length == 0 ) {
+		// 		$(this).closest('.load-more').hide();
+		// 	};
 
-		});
+		// });
 
 
 		// Advanced content scroll

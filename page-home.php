@@ -64,10 +64,10 @@ $wp_query = new WP_Query( $args );
 					
 				</div>
 
-				<div class="load-more">
+				<!-- <div class="load-more">
 					<i class="fas fa-sync"></i>
 					<span><?php _e( 'MORE', 'loans' ); ?></span>
-				</div>
+				</div> -->
 
 			</section>
 

@@ -23,31 +23,31 @@
 				<?php if ( get_field( 'lender_lagstabelopp' ) ): ?>
 					<div>
 						<span><?php the_field( 'lender_lagstabelopp' ); ?> kr</span>
-						<span>Lägstabelopp</span>
+						<span><?php _e( 'Lägstabelopp', 'loans' ); ?></span>
 					</div>
 				<?php endif ?>
 				<?php if ( get_field( 'lender_hogstabelopp' ) ): ?>
 					<div>
 						<span><?php the_field( 'lender_hogstabelopp' ); ?> kr</span>
-						<span>Högstabelopp</span>
+						<span><?php _e( 'Högstabelopp', 'loans' ); ?></span>
 					</div>
 				<?php endif ?>
 				<?php if ( get_field( 'lender_aldersgrans' ) ): ?>
 					<div>
 						<span><?php the_field( 'lender_aldersgrans' ); ?> ar</span>
-						<span>Åldersgräns</span>
+						<span><?php _e( 'Åldersgräns', 'loans' ); ?></span>
 					</div>
 				<?php endif ?>
 				<?php if ( get_field( 'lender_avgift' ) ): ?>
 					<div>
 						<span><?php the_field( 'lender_avgift' ); ?> kr</span>
-						<span>Avgift</span>
+						<span><?php _e( 'Avgift', 'loans' ); ?></span>
 					</div>
 				<?php endif ?>
 				<?php if ( get_field( 'lender_ranta' ) ): ?>
 					<div>
 						<span><?php the_field( 'lender_ranta' ); ?></span>
-						<span>Ränta</span>
+						<span><?php _e( 'Ränta', 'loans' ); ?></span>
 					</div>
 				<?php endif ?>
 			</div>
@@ -74,7 +74,7 @@
 			</div>
 			<div class="cta-btn col-12 col-md-3">
 				<div class="actions">
-					<a class="btn lender-count" data-lender-id="<?php echo get_the_ID(); ?>" href="<?php the_field( 'lender_cta_button_url' ); ?>"><?php the_field( 'lender_cta_button_text' ); ?></a>
+					<a class="btn lender-count" data-lender-id="<?php echo get_the_ID(); ?>" href="<?php the_field( 'lender_cta_button_url' ); ?>" rel="nofollow"><?php the_field( 'lender_cta_button_text' ); ?></a>
 				</div>
 			</div>
 		</div>

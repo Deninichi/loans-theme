@@ -38,7 +38,7 @@
 						<?php if ( $lender_contacts_left_side['lender_alla_bolag'] ): ?>
 							<tr>
 								<td><?php _e( 'Alla bolag', 'loans' ); ?></td>
-								<td><a href="<?php echo $lender_contacts_left_side['lender_alla_bolag_url']; ?>"><?php echo $lender_contacts_left_side['lender_alla_bolag']; ?></a></td>
+								<td><a href="<?php echo $lender_contacts_left_side['lender_alla_bolag_url']; ?>" rel="nofollow"><?php echo $lender_contacts_left_side['lender_alla_bolag']; ?></a></td>
 							</tr>
 						<?php endif ?>
 						<?php if ( $lender_contacts_left_side['lender_business_name'] ): ?>
@@ -95,28 +95,28 @@
 									<ul class="ul-inline">
 										<?php if ( $lender_contacts_right_side['lender_socials']['facebook'] ): ?>
 											<li>
-												<a href="<?php echo esc_url( $lender_contacts_right_side['lender_socials']['facebook'] ); ?>">
+												<a href="<?php echo esc_url( $lender_contacts_right_side['lender_socials']['facebook'] ); ?>" rel="nofollow">
 													<i class="fab fa-facebook-f"></i>
 												</a>
 											</li>
 										<?php endif ?>
 										<?php if ( $lender_contacts_right_side['lender_socials']['linkedin'] ): ?>
 											<li>
-												<a href="<?php echo esc_url( $lender_contacts_right_side['lender_socials']['linkedin'] ); ?>">
+												<a href="<?php echo esc_url( $lender_contacts_right_side['lender_socials']['linkedin'] ); ?>" rel="nofollow" >
 													<i class="fab fa-linkedin-in"></i>
 												</a>
 											</li>
 										<?php endif ?>
 										<?php if ( $lender_contacts_right_side['lender_socials']['twitter'] ): ?>
 											<li>
-												<a href="<?php echo esc_url( $lender_contacts_right_side['lender_socials']['twitter'] ); ?>">
+												<a href="<?php echo esc_url( $lender_contacts_right_side['lender_socials']['twitter'] ); ?>" rel="nofollow">
 													<i class="fab fa-twitter"></i>
 												</a>
 											</li>
 										<?php endif ?>
 										<?php if ( $lender_contacts_right_side['lender_socials']['wiki'] ): ?>
 											<li>
-												<a href="<?php echo esc_url( $lender_contacts_right_side['lender_socials']['wiki'] ); ?>">
+												<a rel="nofollow" href="<?php echo esc_url( $lender_contacts_right_side['lender_socials']['wiki'] ); ?>" rel="nofollow">
 													<i class="fab fa-wikipedia-w"></i>
 												</a>
 											</li>
@@ -133,7 +133,7 @@
 
 		<div class="contacts-logo">
 			<div class="contacts-logo-wrap">
-				<img src="<?php echo $lender_contacts_logo['sizes']['medium']; ?>" alt="">
+				<a href="<?php the_field( 'lender_contacts_logo_url' ); ?>"><img src="<?php echo $lender_contacts_logo['sizes']['medium']; ?>" alt=""></a>
 			</div>
 		</div>
 	</div>

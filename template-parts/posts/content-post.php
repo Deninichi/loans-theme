@@ -88,11 +88,6 @@
         
       </div>
 
-      <div class="load-more">
-        <i class="fas fa-sync"></i>
-        <span><?php _e( 'MORE', 'loans' ); ?></span>
-      </div>
-
     </section>
   <?php endif ?>
 
