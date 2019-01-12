@@ -19,31 +19,31 @@
 					<table>
 						<?php if ( $lender_contacts_left_side['lender_website'] ): ?>
 							<tr>
-								<td><?php _e( 'Website', 'loans' ); ?></td>
+								<td><?php _e( 'Hemsida:', 'loans' ); ?></td>
 								<td><?php echo $lender_contacts_left_side['lender_website']; ?></td>
 							</tr>
 						<?php endif ?>
 						<?php if ( $lender_contacts_left_side['lender_founded'] ): ?>
 							<tr>
-								<td><?php _e( 'Founded', 'loans' ); ?></td>
+								<td><?php _e( 'Lanserades:', 'loans' ); ?></td>
 								<td><?php echo $lender_contacts_left_side['lender_founded']; ?></td>
 							</tr>
 						<?php endif ?>
 						<?php if ( $lender_contacts_left_side['lender_email'] ): ?>
 							<tr>
-								<td><?php _e( 'Email', 'loans' ); ?></td>
+								<td><?php _e( 'E-post:', 'loans' ); ?></td>
 								<td><?php echo $lender_contacts_left_side['lender_email']; ?></td>
 							</tr>
 						<?php endif ?>
 						<?php if ( $lender_contacts_left_side['lender_alla_bolag'] ): ?>
 							<tr>
-								<td><?php _e( 'Alla bolag', 'loans' ); ?></td>
+								<td><?php _e( 'Företagsinformation:', 'loans' ); ?></td>
 								<td><a href="<?php echo $lender_contacts_left_side['lender_alla_bolag_url']; ?>" rel="nofollow"><?php echo $lender_contacts_left_side['lender_alla_bolag']; ?></a></td>
 							</tr>
 						<?php endif ?>
 						<?php if ( $lender_contacts_left_side['lender_business_name'] ): ?>
 							<tr>
-								<td><?php _e( 'Business name', 'loans' ); ?></td>
+								<td><?php _e( 'Företagsnamn:', 'loans' ); ?></td>
 								<td><?php echo $lender_contacts_left_side['lender_business_name']; ?></td>
 							</tr>
 						<?php endif ?>
@@ -60,19 +60,19 @@
 					<table>
 						<?php if ( $lender_contacts_right_side['lender_street'] ): ?>
 							<tr>
-								<td><?php _e( 'Street', 'loans' ); ?></td>
+								<td><?php _e( 'Gata:', 'loans' ); ?></td>
 								<td><?php echo $lender_contacts_right_side['lender_street']; ?></td>
 							</tr>
 						<?php endif ?>
 						<?php if ( $lender_contacts_right_side['lender_city'] ): ?>
 							<tr>
-								<td><?php _e( 'City', 'loans' ); ?></td>
+								<td><?php _e( 'Stad:', 'loans' ); ?></td>
 								<td><?php echo $lender_contacts_right_side['lender_city']; ?></td>
 							</tr>
 						<?php endif ?>
 						<?php if ( $lender_contacts_right_side['lender_payment_time'] ): ?>
 							<tr>
-								<td><?php _e( 'Payment time', 'loans' ); ?></td>
+								<td><?php _e( 'Utbetalning:', 'loans' ); ?></td>
 								<td><?php echo $lender_contacts_right_side['lender_payment_time']; ?></td>
 							</tr>
 						<?php endif ?>
@@ -84,13 +84,13 @@
 						<?php endif ?>
 						<?php if ( $lender_contacts_right_side['lender_phone'] ): ?>
 							<tr>
-								<td><?php _e( 'Phone', 'loans' ); ?></td>
+								<td><?php _e( 'Telefonnummer:', 'loans' ); ?></td>
 								<td><?php echo $lender_contacts_right_side['lender_phone']; ?></td>
 							</tr>
 						<?php endif ?>
 						<?php if ( ! $lender_contacts_right_side['lender_socials'] || ! empty( implode( '', $lender_contacts_right_side['lender_socials'] ) ) ): ?>
 							<tr>
-								<td><?php _e( 'Socials', 'loans' ); ?></td>
+								<td><?php _e( 'Sociala medier:', 'loans' ); ?></td>
 								<td>
 									<ul class="ul-inline">
 										<?php if ( $lender_contacts_right_side['lender_socials']['facebook'] ): ?>

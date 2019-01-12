@@ -23,23 +23,23 @@
 			<div class="col-12 col-md-6 work">
 				<table>
 					<tr>
-						<td><?php _e( "Mon", 'loans' ); ?></td>
+						<td><?php _e( "Måndag", 'loans' ); ?></td>
 						<td><?php echo $lender_days_work_days['lender_date_monday'] ?></td>
 					</tr>
 					<tr>
-						<td><?php _e( "Tue", 'loans' ); ?></td>
+						<td><?php _e( "Tisdag", 'loans' ); ?></td>
 						<td><?php echo $lender_days_work_days['lender_date_tuesday'] ?></td>
 					</tr>
 					<tr>
-						<td><?php _e( "Wed", 'loans' ); ?></td>
+						<td><?php _e( "Onsdag", 'loans' ); ?></td>
 						<td><?php echo $lender_days_work_days['lender_date_wednesday'] ?></td>
 					</tr>
 					<tr>
-						<td><?php _e( "Thu", 'loans' ); ?></td>
+						<td><?php _e( "Torsdag", 'loans' ); ?></td>
 						<td><?php echo $lender_days_work_days['lender_date_thursday'] ?></td>
 					</tr>
 					<tr>
-						<td><?php _e( "Fri", 'loans' ); ?></td>
+						<td><?php _e( "Fredag", 'loans' ); ?></td>
 						<td><?php echo $lender_days_work_days['lender_date_friday'] ?></td>
 					</tr>
 				</table>
@@ -47,11 +47,11 @@
 			<div class="col-12 col-md-6 weekend">
 				<table>
 					<tr>
-						<td><?php _e( "Sat", 'loans' ); ?></td>
+						<td><?php _e( "Saturday", 'loans' ); ?></td>
 						<td><?php echo $lender_days_weekends['lender_date_saturday'] ?></td>
 					</tr>
 					<tr>
-						<td><?php _e( "Sun", 'loans' ); ?></td>
+						<td><?php _e( "Söndag", 'loans' ); ?></td>
 						<td><?php echo $lender_days_weekends['lender_date_sunday'] ?></td>
 					</tr>
 				</table>
