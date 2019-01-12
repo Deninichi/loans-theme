@@ -849,27 +849,33 @@ footer{
 				margin-bottom: .75rem;
 				color: $heading-color;
 				font-weight: 500;
+				display: inline-block;
+				margin-right: 1rem;
 
 				span{
 					cursor: pointer;
 					transition: all .3s;
 
 					i{
-						margin: 0 1.5rem 0 .7rem;
+						margin-right: 0.5rem;
 					}
 
 					img{
 						width: 20px;
-						margin-right: 1rem;
+						margin-right: 0.5rem;
 					}
 
 					svg{
 						width: 20px;
-						margin-right: 1rem;
+						margin-right: 0.5rem;
 
 						& path{
 							fill: $pink;
 						}
+					}
+
+					&:last-child {
+						margin-right: 0;
 					}
 
 					&:hover{
