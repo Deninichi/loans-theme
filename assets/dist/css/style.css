@@ -705,7 +705,7 @@ footer {
 /*=== Pros and Cons ===*/
 .pros-cons .items {
   padding: 1.2rem;
-  margin-bottom: 1rem; }
+  height: 100%; }
   .pros-cons .items ul {
     margin: 0; }
     .pros-cons .items ul li {

@@ -24,7 +24,9 @@
 			<div class="pro-wrap items">
 				<ul>
 					<?php foreach ( $lender_pros_and_cons['pros_and_cons_items'] as $item ): ?>
-						<li><i class="fas fa-check"></i><?php echo $item['pro'] ?></li>
+						<?php if ( '' !== $item['pro'] ): ?>
+							<li><i class="fas fa-check"></i><?php echo $item['pro'] ?></li>
+						<?php endif ?>
 					<?php endforeach ?>
 				</ul>
 			</div>
@@ -33,7 +35,9 @@
 			<div class="con-wrap items">
 				<ul>
 					<?php foreach ( $lender_pros_and_cons['pros_and_cons_items'] as $item ): ?>
-						<li><i class="fas fa-times"></i><?php echo $item['con'] ?></li>
+						<?php if ( '' !== $item['con'] ): ?>
+							<li><i class="fas fa-times"></i><?php echo $item['con'] ?></li>
+						<?php endif ?>
 					<?php endforeach ?>
 				</ul>
 			</div>
