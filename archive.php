@@ -15,7 +15,7 @@ $post_obj = get_queried_object();
 $args = array(
 	'post_type'   => array( 'post', 'lender' ),
     'tag_id'      => $post_obj->term_id,
-    'numberposts' => -1
+    'posts_per_page' => -1
 );
 $tag_query = new WP_Query( $args );
 

@@ -7,7 +7,7 @@ $title_icon = get_field( 'homepage_title_icon' );
 
 $args = array(
 	'post_type' => 'lender',
-	'numberposts' => -1
+	'posts_per_page' => -1
 );
 $wp_query = new WP_Query( $args );
 
@@ -63,12 +63,6 @@ $wp_query = new WP_Query( $args );
 					?>
 					
 				</div>
-
-				<!-- <div class="load-more">
-					<i class="fas fa-sync"></i>
-					<span><?php _e( 'MORE', 'loans' ); ?></span>
-				</div> -->
-
 			</section>
 
 		</div>
