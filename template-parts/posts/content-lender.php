@@ -5,6 +5,11 @@
 	$related_posts  = get_field( 'lender_related_lenders' );
 	$related_posts  = $related_posts['global_related_lenders'];
 
+	$freedom_finance = get_field( 'lender_freedom_finance_text' );
+	if ( empty( $freedom_finance ) ) {
+		$freedom_finance = 'Freedom Finance';
+	}
+
 ?>	
 
 <article class="lender">
@@ -56,7 +61,7 @@
 		<div class="row-wrapper pt-3 pb-3">
 			<div class="col-12 col-md-3">
 				<div class="bottom-desc">
-					<?php the_field( 'lebder_freedom_finance' ); ?> valde Freedom finance
+					<?php the_field( 'lebder_freedom_finance' ); ?> valde <?php echo $freedom_finance ?>
 				</div>
 			</div>
 			<div class="checkboxes col-12 col-md-6">
@@ -109,7 +114,7 @@
 					$args = array(
 						'post_type'   => 'lender',
 						'post__in' 	  => $related_posts,
-						'numberposts' => -1
+						'posts_per_page' => -1
 					);
 					$related_query = new WP_Query( $args );
 
@@ -135,12 +140,6 @@
 				?>
 				
 			</div>
-
-			<div class="load-more">
-				<i class="fas fa-sync"></i>
-				<span><?php _e( 'MORE', 'loans' ); ?></span>
-			</div>
-
 		</section>
 	<?php endif ?>
 

@@ -63,7 +63,7 @@
           $args = array(
             'post_type'   => 'lender',
             'post__in'    => $related_lenders,
-            'numberposts' => -1
+            'posts_per_page' => -1
           );
 
           $wp_query = new WP_Query( $args );
