@@ -243,6 +243,12 @@ header {
       height: 100%; }
       header nav ul > li {
         margin: 0 1rem; }
+        header nav ul > li.lightning-icon::before {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\F0E7";
+          color: #fe495f;
+          margin-right: 7px; }
         header nav ul > li:first-child {
           margin-left: 0; }
         header nav ul > li:last-child {

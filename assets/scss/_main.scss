@@ -110,6 +110,14 @@ header{
 
 	    	> li{
 	    		margin: 0 1rem;
+
+	    		&.lightning-icon::before {
+	    			font-family: "Font Awesome 5 Free";
+				    font-weight: 900;
+				    content: "\f0e7";
+				    color: #fe495f;
+				    margin-right: 7px;
+	    		}
 				
 				&:first-child{
 					margin-left: 0;
