@@ -203,7 +203,7 @@ header{
 }
 
 
-/*======== POST LOOP ========*/
+/*======== LENDERS LOOP ========*/
 .lender-loop-wrap{
 	background-color: white;
     box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 0.55);
@@ -262,6 +262,76 @@ header{
     	background-color: $dark-green;
     	color: white;
     	padding: .5rem;
+    }
+}
+
+
+/*======== POSTS LOOP ========*/
+.post-loop {
+	border-bottom: 3px solid $dark-green;
+	position: relative;
+	border: 1px solid #eee;
+    box-shadow: 2px -2px 30px -3px #efefef;
+    border-bottom: 3px solid #207a88;
+    position: relative;
+    color: $heading-color;
+
+	.read-more{
+		position: absolute;
+	    right: 0;
+	    top: 0;
+	    width: 40px;
+	    height: 40px;
+	    text-align: right;
+	    padding-right: .3rem;
+    	padding-top: .45rem;
+		
+		a{
+			position: relative;
+			color: white;
+		}
+
+    	&:before{
+			content: '';
+		    border-top: 35px solid transparent;
+		    border-bottom: 35px solid transparent;
+		    border-left: 35px solid $pink;
+		    -webkit-transform: rotate(-45deg);
+		    transform: rotate(-45deg);
+		    position: absolute;
+		    top: -23px;
+		    right: -5px;
+    	}
+    }
+	
+	.logo-wrap {
+		border-bottom: 1px solid $light-grey;
+	}
+
+    .post-content {
+
+    	border-left: 1px solid $light-grey;
+    	border-bottom: 1px solid $light-grey;
+
+    	&.row-wrapper {
+    		flex-direction: column;
+    	}
+
+    	h3 {
+    		font-weight: 500;
+    	}
+
+    	.post-meta {
+    		color: $dark-green;
+
+    		a {
+    			color: $dark-green;
+    		}
+
+    		.date {
+    			font-weight: 500;
+    		}
+    	}
     }
 }
 
@@ -449,17 +519,26 @@ footer{
     position: relative;
 
     a{
-		color: white;
+		color: $body-color;
 	    padding: .1rem 1rem;
 	    border-radius: 20px;
 	    font-size: 1rem;
 	    line-height: 1;
 	    font-weight: 500;
 	    margin-right: 5px;
-	    background-color: $dark-green;
 
 	    &:first-child{
-	    	background-color: $pink;
+	    	color: $pink;
+	    	position: relative;
+
+	    	&::after {
+				content: "\f105";
+			    font-family: "Font Awesome 5 Free";
+			    font-weight: 600;
+			    position: absolute;
+			    right: -5px;
+			    top: 4px;
+	    	}
 	    }
     }
 }
@@ -587,6 +666,53 @@ footer{
 	padding: 2rem;
     margin: 1rem 0;
     border-left: 3px solid #ed626f;
+}
+
+.pagination {
+	color: $heading-color;
+
+	a {
+		color: $heading-color;
+		font-size: 18px;
+		font-weight: 500;
+
+		&:hover,
+		&.active,
+		i {
+			text-decoration: none;
+			color: $dark-green;
+		}
+
+		&.prev {
+			float: left;
+
+			i {
+				margin-right: 1rem;
+			}
+		}
+
+		&.next {
+			float: rigth;
+
+			i {
+				margin-left: 1rem;
+			}
+		}
+		
+	}
+
+	ul {
+		padding: 0;
+    	margin: auto;
+
+		li {
+			display: inline-block;
+
+			a {
+				margin: 0 1rem;
+			}
+		}
+	}
 }
 
 /*======== SECTIONS ========*/

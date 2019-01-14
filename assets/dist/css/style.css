@@ -297,7 +297,7 @@ header {
   .main {
     padding-top: 3rem; } }
 
-/*======== POST LOOP ========*/
+/*======== LENDERS LOOP ========*/
 .lender-loop-wrap {
   background-color: white;
   box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 0.55);
@@ -339,6 +339,54 @@ header {
     background-color: #207a88;
     color: white;
     padding: .5rem; }
+
+/*======== POSTS LOOP ========*/
+.post-loop {
+  border-bottom: 3px solid #207a88;
+  position: relative;
+  border: 1px solid #eee;
+  box-shadow: 2px -2px 30px -3px #efefef;
+  border-bottom: 3px solid #207a88;
+  position: relative;
+  color: #171717; }
+  .post-loop .read-more {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    text-align: right;
+    padding-right: .3rem;
+    padding-top: .45rem; }
+    .post-loop .read-more a {
+      position: relative;
+      color: white; }
+    .post-loop .read-more:before {
+      content: '';
+      border-top: 35px solid transparent;
+      border-bottom: 35px solid transparent;
+      border-left: 35px solid #eb5864;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      position: absolute;
+      top: -23px;
+      right: -5px; }
+  .post-loop .logo-wrap {
+    border-bottom: 1px solid #e3e8f0; }
+  .post-loop .post-content {
+    border-left: 1px solid #e3e8f0;
+    border-bottom: 1px solid #e3e8f0; }
+    .post-loop .post-content.row-wrapper {
+      -webkit-flex-direction: column;
+              flex-direction: column; }
+    .post-loop .post-content h3 {
+      font-weight: 500; }
+    .post-loop .post-content .post-meta {
+      color: #207a88; }
+      .post-loop .post-content .post-meta a {
+        color: #207a88; }
+      .post-loop .post-content .post-meta .date {
+        font-weight: 500; }
 
 /*======== SIDEBAR ========*/
 #sidebar .widget {
@@ -466,16 +514,23 @@ footer {
   background-color: white;
   position: relative; }
   .breadcrumbs a {
-    color: white;
+    color: #92959c;
     padding: .1rem 1rem;
     border-radius: 20px;
     font-size: 1rem;
     line-height: 1;
     font-weight: 500;
-    margin-right: 5px;
-    background-color: #207a88; }
+    margin-right: 5px; }
     .breadcrumbs a:first-child {
-      background-color: #eb5864; }
+      color: #eb5864;
+      position: relative; }
+      .breadcrumbs a:first-child::after {
+        content: "\F105";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        position: absolute;
+        right: -5px;
+        top: 4px; }
 
 @media (max-width: 768px) {
   .breadcrumbs {
@@ -570,6 +625,32 @@ footer {
   padding: 2rem;
   margin: 1rem 0;
   border-left: 3px solid #ed626f; }
+
+.pagination {
+  color: #171717; }
+  .pagination a {
+    color: #171717;
+    font-size: 18px;
+    font-weight: 500; }
+    .pagination a:hover, .pagination a.active,
+    .pagination a i {
+      text-decoration: none;
+      color: #207a88; }
+    .pagination a.prev {
+      float: left; }
+      .pagination a.prev i {
+        margin-right: 1rem; }
+    .pagination a.next {
+      float: rigth; }
+      .pagination a.next i {
+        margin-left: 1rem; }
+  .pagination ul {
+    padding: 0;
+    margin: auto; }
+    .pagination ul li {
+      display: inline-block; }
+      .pagination ul li a {
+        margin: 0 1rem; }
 
 /*======== SECTIONS ========*/
 .content-section {
