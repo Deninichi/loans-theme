@@ -1,3 +1,9 @@
+@media (min-width: 768px) {
+	.collapse-section{
+		padding: 3.3rem 2.6rem;
+	}
+}
+
 @media (max-width: 1200px) {
 	
 	/*=== HEADER ===*/
@@ -64,6 +70,15 @@
 	/*=== CONTENT ===*/
 	.main-content{
 		margin-top: 0;
+	}
+
+	.pagination {
+	    margin-bottom: 4rem;
+	    margin-top: 3rem;
+
+	    ul {
+			opacity: 0;
+		}
 	}
 
 }

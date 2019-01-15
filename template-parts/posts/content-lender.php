@@ -101,6 +101,8 @@
 
 	<?php get_template_part( 'template-parts/gallery-section-part' ); ?>
 
+	<?php get_template_part( 'template-parts/author-block-part' ); ?>
+
 	<?php if ( ! empty($related_posts) ): ?>
 		
 	

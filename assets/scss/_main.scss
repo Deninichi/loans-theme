@@ -635,6 +635,15 @@ footer{
 	    color: white;
 	    text-transform: uppercase;
 	    font-weight: 600;
+	    transition: all .3s;
+
+	    &.btn-green {
+	    	background-color: $dark-green;
+	    }
+
+	    &:hover {
+	    	opacity: .85;
+	    }
 	}
 	.btn-link{
 		display: inline-block;
@@ -1044,6 +1053,8 @@ footer{
 // Gallery section
 .gallery-section{
 
+	border-bottom: 1px solid $light-grey;
+
 	.image-wrap{
 		height: 100%;
 		max-height: 225px;
@@ -1111,6 +1122,63 @@ footer{
 	}
 }
 
+
+/*======== Author section ========*/
+.author-section {
+	border: 3px solid $dark-green;
+	color: $heading-color;
+	
+	h3 {
+		font-size: 1.6rem;
+		font-weight: 500;
+	}
+
+	.email {
+		font-size: 1.125rem;
+		margin: 0;
+	}
+
+	img {
+		border-radius: 50%;
+	}
+
+	i {
+		color: $light-grey;
+
+		&.active {
+			color: $pink;
+		}
+	}
+
+	span {
+		font-weight: 500;
+	}
+
+	.actions {
+
+		a {
+			width: 100%;
+		}
+	}
+
+	.stars {
+		position: relative;
+		display: inline-block;
+
+		&::before {
+			color: #fe495f;
+		    content: '\f005\f005\f005\f005\f005';
+		    font-family: "Font Awesome 5 Free";
+		    font-weight: 900;
+		    position: absolute;
+		    letter-spacing: 4px;
+		    width: 100%;
+		    overflow: hidden;
+		}
+	}
+}
+
+
 /*======== Tags section ========*/
 .tags-section{
 	
@@ -1136,13 +1204,6 @@ footer{
 		    	text-decoration: none;
 		    }
 		}
-	}
-}
-
-
-@media (min-width: 768px){
-	.collapse-section{
-		padding: 3.3rem 2.6rem;
 	}
 }
 
