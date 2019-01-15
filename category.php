@@ -110,17 +110,15 @@ get_header(); ?>
 
 					endwhile;
 
-					?>
-
-					<div class="pagination">
-						<?php  the_previous_page_url(); ?>
-						<ul>
-							<?php the_pagination_links(); ?>
-						</ul>
-						<?php the_next_page_url(); ?>
-					</div>
-
-					<?php
+					if ( function_exists('the_pagination_links') ): ?>
+						<div class="pagination">
+							<?php  the_previous_page_url(); ?>
+							<ul>
+								<?php the_pagination_links(); ?>
+							</ul>
+							<?php the_next_page_url(); ?>
+						</div>
+					<?php endif;
 
 				endif;
 				?>
