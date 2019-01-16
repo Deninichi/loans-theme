@@ -54,6 +54,8 @@
   
   <?php get_template_part( 'template-parts/advanced-content-section-part' ); ?>
 
+  <?php get_template_part( 'template-parts/author-block-part' ); ?>
+
   <?php if ( ! empty($related_lenders) ): ?>
     
     <section class="posts content-section text-center bt mt-0 mb-3 pl-0 pr-0">

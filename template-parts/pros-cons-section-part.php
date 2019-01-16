@@ -1,6 +1,4 @@
 <?php 
-	
-	// array(1) { ["global_pros_and_cons"]=> array(2) { ["heading"]=> string(13) "Pros and Cons" ["pros_and_cons_items"]=> array(3) { [0]=> array(2) { ["pro"]=> string(19) "Some text goes here" ["con"]=> string(19) "Some text goes here" } [1]=> array(2) { ["pro"]=> string(19) "Some text goes here" ["con"]=> string(19) "Some text goes here" } [2]=> array(2) { ["pro"]=> string(19) "Some text goes here" ["con"]=> string(19) "Some text goes here" } } } }
 
 	$lender_pros_and_cons = get_field( 'lender_pros_and_cons' );
 	$lender_pros_and_cons = $lender_pros_and_cons['global_pros_and_cons'];

@@ -48,6 +48,11 @@ a{
 	}
 }
 
+.red-bold {
+	color: $pink;
+	font-weight: 500;
+}
+
 /*======== HEADER ========*/
 header{
 	display: flex;
@@ -209,34 +214,6 @@ header{
     box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 0.55);
     color: $heading-color;
     position: relative;
-
-    .lender-number{
-	    position: absolute;
-	    right: 0;
-	    top: 0;
-	    width: 40px;
-	    height: 40px;
-		text-align: right;
-	    padding-right: .5rem;
-	    padding-top: .25rem;
-		
-		span{
-			position: relative;
-			color: white;
-		}
-
-    	&:before{
-			content: '';
-		    border-top: 30px solid transparent;
-		    border-bottom: 30px solid transparent;
-		    border-left: 30px solid $pink;
-		    -webkit-transform: rotate(-45deg);
-		    transform: rotate(-45deg);
-		    position: absolute;
-		    top: -20px;
-		    right: -5px;
-    	}
-    }
 	
 	.lender-content{
 		padding: 20px 40px 20px;
@@ -265,6 +242,34 @@ header{
     }
 }
 
+.lender-number{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+	text-align: right;
+    padding-right: .5rem;
+    padding-top: .25rem;
+	
+	span{
+		position: relative;
+		color: white;
+	}
+
+	&:before{
+		content: '';
+	    border-top: 30px solid transparent;
+	    border-bottom: 30px solid transparent;
+	    border-left: 30px solid $pink;
+	    -webkit-transform: rotate(-45deg);
+	    transform: rotate(-45deg);
+	    position: absolute;
+	    top: -20px;
+	    right: -5px;
+	}
+}
+
 
 /*======== POSTS LOOP ========*/
 .post-loop {
@@ -289,6 +294,7 @@ header{
 		a{
 			position: relative;
 			color: white;
+			z-index: 90;
 		}
 
     	&:before{
@@ -478,42 +484,8 @@ footer{
 
 }
 
-@media (max-width: 768px){
-	.wrap{
-		margin-top: 3rem;
-	}
-
-	.general-info {
-
-		.info > div {
-			width: 100%;
-			display: flex;
-
-			span:last-child{
-				order: 1;
-				width: 50%
-			}
-			span:first-child{
-				order: 2;
-			}
-		}
-
-		.checkboxes{
-			margin: 1rem 0;
-
-			ul{
-				flex-wrap: wrap;
-
-				li{
-					width: 100%;
-					margin: 0;
-				}
-			}
-		}
-	}
-}
-
 /*======== ELEMENTS ========*/
+
 .breadcrumbs{
 	background-color: white;
     position: relative;
@@ -630,7 +602,7 @@ footer{
 
 	.btn{
 		display: block;
-	    background: $pink;
+	    background-color: $pink;
 	    border-radius: 20px;
 	    color: white;
 	    text-transform: uppercase;
@@ -639,6 +611,16 @@ footer{
 
 	    &.btn-green {
 	    	background-color: $dark-green;
+	    }
+
+	    &.btn-white {
+	    	background-color: white;
+	    	color: $heading-color;
+
+	    	i {
+	    		color: $pink;
+	    		margin-right: .75rem;
+	    	}
 	    }
 
 	    &:hover {
@@ -738,6 +720,10 @@ footer{
 
 .bb{
 	border-bottom: 1px solid $light-grey;
+}
+
+.bb-3-green{
+	border-bottom: 3px solid $dark-green !important;
 }
 
 .bt{
@@ -863,7 +849,7 @@ footer{
 .contacts-section-wrap{
 	position: relative;
     z-index: 90;
-	margin-bottom: 5rem;
+	margin-bottom: 0rem;
 
 	.contacts-section{
 		padding: 2rem;
@@ -908,6 +894,7 @@ footer{
 	    left: 0;
 	    bottom: -5rem;
 	    z-index: 0;
+	    display: none;
 	}
 }
 
@@ -1046,6 +1033,25 @@ footer{
 				font-size: 2rem;
 			}
 		}
+
+		ul, ol {
+			padding-left: 1.5rem;
+
+			li {
+				position: relative;
+				list-style: none;
+
+				&:before {
+					content: '\f00c';
+					color: $pink;
+					font-family: "Font Awesome 5 Free";
+    				font-weight: 600;
+					position: absolute;
+				    left: -20px;
+				    top: -1px;
+				}
+			}
+		}
 	}
 }
 
@@ -1174,6 +1180,134 @@ footer{
 		    letter-spacing: 4px;
 		    width: 100%;
 		    overflow: hidden;
+		}
+	}
+}
+
+
+/*======== Features section ========*/
+.features-section {
+
+	img {
+		max-width: 150px;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
+
+	.feature-wrap {
+		height: 100%;
+	    padding: 2rem;
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	    align-items: flex-end;
+	}
+}
+
+
+/*======== Features 2 section ========*/
+.features-2-section {
+
+	img {
+		max-width: 150px;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+		margin-top: 2rem;
+	}
+
+	p {
+		color: $heading-color;
+	}
+
+	.boxes {
+		align-items: flex-end;
+		border: 1px solid #eee;
+    	box-shadow: 2px -2px 30px -3px #efefef;
+    	align-items: stretch;
+
+		& > div {
+			background-color: white;
+			border-right: 1px solid #eee;
+			padding: 2rem;
+			justify-content: flex-end;
+		    display: flex;
+		    flex-wrap: wrap;
+		    flex-direction: column;
+
+		    &:first-child {
+		    	border-left: 1px solid #eee;
+		    }
+		}
+	}
+}
+
+
+/*======== Download section ========*/
+.download-section {
+
+	.box-wrap {
+		padding: 2rem;
+	    display: flex;
+	    flex-wrap: wrap;
+	    height: 100%;
+	    align-items: center;
+	    position: relative;
+	    border: 1px solid #eee;
+    	box-shadow: 2px -2px 30px -3px #efefef;
+	}
+
+	h3 {
+		width: 100%;
+	}
+
+	.download-block {
+		color: white;
+
+		.row-wrapper {
+
+			padding: 0;
+
+			div {
+				padding-top: 2rem;
+				padding-bottom: 2rem;
+			}
+		}
+
+		.actions {
+			background-color: #248392;
+		}
+	}
+}
+
+
+/*======== Past winners section ========*/
+.past-winners-section {
+
+	.row {
+		border: 3px solid $dark-green;
+    	background-color: white;
+    	margin: 0;
+	}
+	
+	a {
+		color: black;
+	    font-weight: 500;
+	    padding: 1rem 2rem;
+	    display: inline-block;
+	    width: 100%;
+
+	    .icon-wrapper {
+		    margin-right: 2rem;
+		}
+
+		&:hover {
+			text-decoration: none;
+	    	background-color: #207a88;
+	   		color: white;
 		}
 	}
 }

@@ -81,4 +81,56 @@
 		}
 	}
 
+
+	/*=== Single Page ===*/
+	.wrap{
+		margin-top: 3rem;
+	}
+
+	.general-info {
+
+		.info > div {
+			width: 100%;
+			display: flex;
+
+			span:last-child{
+				order: 1;
+				width: 50%
+			}
+			span:first-child{
+				order: 2;
+			}
+		}
+
+		.checkboxes{
+			margin: 1rem 0;
+
+			ul{
+				flex-wrap: wrap;
+
+				li{
+					width: 100%;
+					margin: 0;
+				}
+			}
+		}
+	}
+
+
+	/*=== Features 2 section ===*/
+	.features-2-section {
+
+		.boxes {
+			box-shadow: none;
+			border: none;
+
+			& > div {
+				border: 1px solid #eee;
+				box-shadow: 2px -2px 30px -3px #efefef;
+			}
+		}
+	}
+
+
+
 }
