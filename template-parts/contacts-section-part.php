@@ -11,17 +11,7 @@
 
 
 <section class="contacts-section-wrap">
-	
-	<?php if ( $lender_contacts_logo ): ?>
-		<style>
-			.contacts-section-wrap::after {
-				display: block;
-			}
-			.contacts-section-wrap {
-			    margin-bottom: 5rem;
-			}
-		</style>
-	<?php endif; ?>
+
 	<div class="contacts-section bg-green">
 		<div class="contacts-wrap">
 			<div class="row">
@@ -140,14 +130,6 @@
 
 			</div><!-- .row -->
 		</div><!-- .contacts-wrap -->
-
-		<?php if ( $lender_contacts_logo ): ?>
-			<div class="contacts-logo">
-				<div class="contacts-logo-wrap">
-					<a href="<?php the_field( 'lender_contacts_logo_url' ); ?>"><img src="<?php echo $lender_contacts_logo['sizes']['medium']; ?>" alt=""></a>
-				</div>
-			</div>
-		<?php endif ?>
 		
 	</div>
 	
