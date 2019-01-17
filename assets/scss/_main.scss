@@ -212,11 +212,11 @@ header{
 .lender-loop-wrap{
 	background-color: white;
     box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 0.55);
-    color: $heading-color;
     position: relative;
 	
 	.lender-content{
-		padding: 20px 40px 20px;
+		padding: 1.2rem 2.2rem 1.2rem;
+		color: $heading-color;
 	}
 
     table {
@@ -236,9 +236,16 @@ header{
     }
 
     .bottom-desc{
-    	background-color: $dark-green;
-    	color: white;
+    	background-color: #f3f6fa;
+    	color: $heading-color;
     	padding: .5rem;
+    }
+
+    .interest-rate {
+    	padding: 1.2rem 2.2rem 1.2rem;
+    	border-bottom: 3px solid $dark-green;
+    	font-style: italic;
+    	font-size: 0.8125rem;
     }
 }
 
@@ -468,6 +475,8 @@ footer{
 }
 
 .general-info {
+	color: $heading-color;
+
 	.logo img{
 		width: 100%;
 	}
@@ -480,15 +489,15 @@ footer{
 		span{
 			display: block;
 
-			&:last-child{
+			&:first-child{
 				font-weight: 500;
 			}
 		}
 	}
 
 	.bottom-desc{
-		background-color: $dark-green;
-		color: white;
+		background-color: #f3f6fa;
+		color: $heading-color;
 		text-align: center;
 		padding: .3rem;
 	}
@@ -645,7 +654,7 @@ footer{
 	.btn-link{
 		display: inline-block;
 	    margin-top: 1rem;
-	    font-weight: 500;
+	    font-weight: 400;
 	    color: $dark-green;
 	}
 }
@@ -878,6 +887,10 @@ footer{
 			
 			td{
 				padding: 3px;
+
+				&:last-child{
+					font-weight: 500;
+				}
 
 				a{
 					color: white;

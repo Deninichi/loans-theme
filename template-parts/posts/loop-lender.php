@@ -55,5 +55,12 @@
 		<div class="bottom-desc">
 			<?php the_field( 'lebder_freedom_finance' ); ?> <?php _e( 'valde Freedom finance', 'loans' ); ?>
 		</div>
+		
+		<?php if ( get_field( 'lender_interest_rate' ) ): ?>
+			<div class="interest-rate text-left">
+				<?php the_field( 'lender_interest_rate' ); ?>
+			</div>
+		<?php endif ?>
+		
 	</div>
 </article><!-- .post-loop -->
