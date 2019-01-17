@@ -394,6 +394,15 @@ footer{
 	margin-top: 4rem;
 	margin-bottom: 1rem;
 
+	.flags {
+
+		li {
+			list-style: none;
+			padding: 0 10px;
+			display: inline-block;
+		}
+	}
+
 	.footer-menu{
 		margin: 2.75rem 0;
 
@@ -405,6 +414,7 @@ footer{
 			    flex-wrap: wrap;
 		    	list-style: none;
 		    	align-items: center;
+		    	justify-content: center;
 			    margin: 0;
 			    padding: 0;
 			    height: 100%;
@@ -436,13 +446,18 @@ footer{
 		}
 	}
 
-	.dmca-logo img{
-		background-color: $dark-green;
-		padding: 1.25rem 1.5625rem;
-	}
-
 	.copyright{
 		color: $heading-color;
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+
+    	.logo {
+    		padding: 1rem 0;
+		    padding-right: 1.25rem;
+		    margin-right: 1.25rem;
+		    border-right: 1px solid $light-grey;
+    	}
 	}
 }
 
