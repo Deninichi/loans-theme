@@ -15,11 +15,13 @@
 	<div class="headings-list">
 		<ul>
 			<?php foreach ( $advanced_content as $key => $heading ): ?>
-				<li id="item-<?php echo $key; ?>"><span>
-					<i class="fas fa-angle-right"></i>
-					<img class="style-svg" src="<?php echo esc_url( $heading['heading_icon']['sizes']['thumbnail'] ); ?>" width="20" alt="">
-					<?php echo esc_textarea( $heading['heading'] ); ?>
-				</span></li>
+				<li id="item-<?php echo $key; ?>">
+					<span>
+						<i class="fas fa-angle-right"></i>
+						<img class="style-svg" src="<?php echo esc_url( $heading['heading_icon']['sizes']['thumbnail'] ); ?>" width="20" alt="">
+					</span>
+					<span><?php echo esc_textarea( $heading['heading'] ); ?></span>
+				</li>
 			<?php endforeach ?>
 		</ul>
 	</div>

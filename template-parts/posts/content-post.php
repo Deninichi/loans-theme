@@ -56,6 +56,15 @@
 
   <?php get_template_part( 'template-parts/author-block-part' ); ?>
 
+  <?php
+
+    // If comments are open or we have at least one comment, load up the comment template.
+    if ( comments_open() || get_comments_number() ) :
+      comments_template();
+    endif;
+
+  ?>
+
   <?php if ( ! empty($related_lenders) ): ?>
     
     <section class="posts content-section text-center bt mt-0 mb-3 pl-0 pr-0">

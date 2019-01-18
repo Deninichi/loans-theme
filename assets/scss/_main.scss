@@ -332,6 +332,14 @@ header{
 
     	h3 {
     		font-weight: 500;
+
+    		a {
+    			color: $heading-color;
+
+    			&:hover {
+    				color: $pink;
+    			}
+    		}
     	}
 
     	.post-meta {
@@ -515,7 +523,7 @@ footer{
     position: relative;
 
     a{
-		color: $body-color;
+		color: $dark-green;
 	    padding: .1rem 1rem;
 	    border-radius: 20px;
 	    font-size: 1rem;
@@ -1008,6 +1016,7 @@ footer{
 				font-weight: 500;
 				display: inline-block;
 				margin-right: 1rem;
+				display: flex;
 
 				span{
 					cursor: pointer;
@@ -1029,6 +1038,10 @@ footer{
 						& path{
 							fill: $pink;
 						}
+					}
+
+					&:first-child {
+						white-space: nowrap;
 					}
 
 					&:last-child {

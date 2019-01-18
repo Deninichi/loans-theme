@@ -13,7 +13,7 @@
 			</div>
 		</div>
 		<div class="row-wrapper post-content col-9 col-md-10">
-			<h3><?php the_title(); ?></h3>
+			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 			<div class="post-meta mb-2">
 				<span class="text-wrapper author mr-2">
 					<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a>
