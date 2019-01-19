@@ -804,12 +804,6 @@ footer {
     z-index: 0;
     display: none; }
 
-@media (max-width: 480px) {
-  .contacts-section-wrap .contacts-section {
-    padding: 1rem; }
-    .contacts-section-wrap .contacts-section td:first-child {
-      width: 125px; } }
-
 /*=== Pros and Cons ===*/
 .pros-cons .items {
   padding: 1.2rem;
@@ -1084,6 +1078,10 @@ footer {
     background-color: #207a88;
     color: white; }
 
+/*======== Comments ========*/
+#comment {
+  max-width: 100%; }
+
 /*======== Tags section ========*/
 .tags-section .tags-wrap > span {
   color: #171717;
@@ -1231,3 +1229,13 @@ footer {
     .features-2-section .boxes > div {
       border: 1px solid #eee;
       box-shadow: 2px -2px 30px -3px #efefef; } }
+
+@media (max-width: 480px) {
+  /*=== Contacts Section ===*/
+  .contacts-section-wrap .contacts-section {
+    padding: 1rem .25rem; }
+    .contacts-section-wrap .contacts-section td {
+      width: 125px;
+      word-break: break-word; }
+      .contacts-section-wrap .contacts-section td:first-child {
+        max-width: 125px; } }

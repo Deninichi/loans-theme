@@ -13,7 +13,7 @@
 get_header(); ?>
 
 
-<div class="container">
+<div class="">
 
 	<div class="title-block text-center d-flex justify-content-center align-items-center mb-3">
 		<h1><?php loans_the_title(); ?></h1>

@@ -933,16 +933,6 @@ footer{
 	}
 }
 
-@media (max-width: 480px){
-	.contacts-section-wrap .contacts-section{
-		padding: 1rem;
-
-		td:first-child{
-			width: 125px;
-		}
-	}
-}
-
 
 /*=== Pros and Cons ===*/
 .pros-cons{
@@ -1350,6 +1340,11 @@ footer{
 	   		color: white;
 		}
 	}
+}
+
+/*======== Comments ========*/
+#comment {
+	max-width: 100%;
 }
 
 

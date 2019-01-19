@@ -47,7 +47,7 @@
 			<div class="col-12 col-md-6 weekend">
 				<table>
 					<tr>
-						<td><?php _e( "Saturday", 'loans' ); ?></td>
+						<td><?php _e( "Lördag", 'loans' ); ?></td>
 						<td><?php echo $lender_days_weekends['lender_date_saturday'] ?></td>
 					</tr>
 					<tr>

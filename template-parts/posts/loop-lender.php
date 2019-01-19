@@ -3,6 +3,11 @@
 	$logo = get_field( 'lender_logo' );
 	$checkboxes = get_field( 'lender_checkboxes' );
 
+	$freedom_finance = get_field( 'lender_freedom_finance_text' );
+	if ( empty( $freedom_finance ) ) {
+		$freedom_finance = 'Freedom Finance';
+	}
+
 ?>
 
 <article class="lender-loop col-12 col-md-6 col-lg-4 mb-4">
@@ -53,7 +58,7 @@
 			<a class="btn-link" href="<?php the_field( 'lender_cta_link_url' ); ?>"><?php the_field( 'lender_cta_link_text' ); ?></a>
 		</div>
 		<div class="bottom-desc">
-			<?php the_field( 'lebder_freedom_finance' ); ?> <?php _e( 'valde Freedom finance', 'loans' ); ?>
+			<?php the_field( 'lebder_freedom_finance' ); ?> valde <?php echo $freedom_finance ?>
 		</div>
 		
 		<?php if ( get_field( 'lender_interest_rate' ) ): ?>
