@@ -62,13 +62,13 @@ get_header(); ?>
 				            	'post__in'    => $top_3_lenders,
 				            	'numberposts' => -1
 				          	);
-				          	$wp_query = new WP_Query( $args );
+				          	$posts_query = new WP_Query( $args );
 
 
-				          	if ( $wp_query->have_posts() ) :
+				          	if ( $posts_query->have_posts() ) :
 
 				            	/* Start the Lenders Loop */
-				            	while ( $wp_query->have_posts() ) : $wp_query->the_post();
+				            	while ( $posts_query->have_posts() ) : $posts_query->the_post();
 
 				              		/*
 				               		* Include the Post-Format-specific template for the content.

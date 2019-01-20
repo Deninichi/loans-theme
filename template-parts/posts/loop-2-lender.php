@@ -25,6 +25,10 @@
 						<td><?php the_field( 'lender_hogstabelopp' ); ?> kr</td>
 					</tr>
 					<tr>
+						<td><?php _e( 'Löptid', 'loans' ); ?></td>
+						<td><?php echo ( get_field( 'lender_loptid' ) ) ? get_field( 'lender_loptid' ) : '12-36 mån'; ?></td>
+					</tr>
+					<tr>
 						<td><?php _e( 'Avgift', 'loans' ); ?></td>
 						<td><?php the_field( 'lender_avgift' ); ?> kr</td>
 					</tr>

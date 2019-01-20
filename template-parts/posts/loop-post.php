@@ -24,11 +24,11 @@
 				</span>
 			</div>
 			<div class="d-none d-md-block">
-				<?php echo wp_trim_words( loans_get_description(), 30, '' ); ?>
+				<?php echo wp_trim_words( loans_get_post_description(), 30, '' ); ?>
 			</div>
 		</div>
 		<div class="row-wrapper col-12 d-block d-md-none">
-			<?php echo wp_trim_words( loans_get_description(), 30, '' ); ?>
+			<?php echo wp_trim_words( loans_get_post_description(), 30, '' ); ?>
 		</div>
 	</div>
 </article>
