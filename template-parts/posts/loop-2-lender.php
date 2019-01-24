@@ -39,10 +39,10 @@
 
 					<?php if ( $checkboxes ): ?>
 						<?php foreach ( $checkboxes as $checkbox ): ?>
-						
+							
 							<tr>
 								<td><?php echo $checkbox['text']; ?></td>
-								<td><?php echo ( $checkbox['is_checked'][0] == 1 ) ? '<i class="far fa-check-circle"></i>' : '<i class="far fa-times-circle"></i>'; ?></td>
+								<td><?php echo ( is_array( $checkbox['is_checked'] ) && $checkbox['is_checked'][0] == 1 ) ? '<i class="far fa-check-circle"></i>' : '<i class="far fa-times-circle"></i>'; ?></td>
 							</tr>
 
 						<?php endforeach ?>

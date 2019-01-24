@@ -768,13 +768,20 @@ footer{
 }
 
 /*=== Icon boxes ===*/
-.icon-boxes h5 a{
-	color: $heading-color;
-	text-decoration: none;
-	transition: color .3s;
+.icon-boxes {
 
-	&:hover{
-		color: $pink;
+	h5 a{
+		color: $heading-color;
+		text-decoration: none;
+		transition: color .3s;
+
+		&:hover{
+			color: $pink;
+		}
+	}
+
+	img {
+		height: 60px;
 	}
 }
 
@@ -799,6 +806,7 @@ footer{
 			    line-height: 1;
 			    padding-left: 48px;
 			    white-space: normal;
+			    word-break: break-all;
    	 			text-align: left;
 
    	 			&:hover{

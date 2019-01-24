@@ -11,7 +11,7 @@
  */
 
 $term_obj = get_queried_object();
-$term_id = $post_obj->term_id;
+$term_id = $term_obj->term_id;
 
 $top_3_lenders_heading = get_field( 'top_3_lenders_heading', $term_obj );
 $top_3_lenders         = get_field( 'top_3_lenders', $term_obj );

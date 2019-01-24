@@ -701,6 +701,9 @@ footer {
   .icon-boxes h5 a:hover {
     color: #eb5864; }
 
+.icon-boxes img {
+  height: 60px; }
+
 /*=== Collapse section ===*/
 .collapse-section {
   padding: 3.3rem 1rem;
@@ -718,6 +721,7 @@ footer {
         line-height: 1;
         padding-left: 48px;
         white-space: normal;
+        word-break: break-all;
         text-align: left; }
         .collapse-section .card .card-header button:hover {
           text-decoration: none;
@@ -1231,6 +1235,8 @@ footer {
       box-shadow: 2px -2px 30px -3px #efefef; } }
 
 @media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem; }
   /*=== Contacts Section ===*/
   .contacts-section-wrap .contacts-section {
     padding: 1rem .25rem; }

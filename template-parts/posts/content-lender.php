@@ -70,7 +70,7 @@
 					<ul class="ul-inline align-items-center justify-content-between">
 						<?php foreach ( $checkboxes as $checkbox ): ?>
 							<li>
-								<?php echo ( $checkbox['is_checked'][0] == 1 ) ? '<i class="far fa-check-circle"></i>' : '<i class="far fa-times-circle"></i>'; ?>
+								<?php echo ( is_array( $checkbox['is_checked'] ) && $checkbox['is_checked'][0] == 1 ) ? '<i class="far fa-check-circle"></i>' : '<i class="far fa-times-circle"></i>'; ?>
 								<?php echo $checkbox['text']; ?></li>
 						<?php endforeach ?>
 					</ul>
@@ -79,7 +79,7 @@
 			</div>
 			<div class="cta-btn col-12 col-md-3">
 				<div class="actions">
-					<a class="btn lender-count" data-lender-id="<?php echo get_the_ID(); ?>" href="<?php the_field( 'lender_cta_button_url' ); ?>" rel="nofollow"><?php the_field( 'lender_cta_button_text' ); ?></a>
+					<a class="btn lender-count" data-lender-id="<?php echo get_the_ID(); ?>" data-clicked="no" href="<?php the_field( 'lender_cta_button_url' ); ?>" rel="nofollow"><?php the_field( 'lender_cta_button_text' ); ?></a>
 				</div>
 			</div>
 		</div>

@@ -44,7 +44,7 @@
 						
 							<tr>
 								<td><?php echo $checkbox['text']; ?></td>
-								<td><?php echo ( $checkbox['is_checked'][0] == 1 ) ? '<i class="far fa-check-circle"></i>' : '<i class="far fa-times-circle"></i>'; ?></td>
+								<td><?php echo ( is_array( $checkbox['is_checked'] ) && $checkbox['is_checked'][0] == 1 ) ? '<i class="far fa-check-circle"></i>' : '<i class="far fa-times-circle"></i>'; ?></td>
 							</tr>
 
 						<?php endforeach ?>
@@ -58,7 +58,7 @@
 			</table>
 		</div>
 		<div class="actions bt">
-			<a class="btn lender-count" data-lender-id="<?php echo get_the_ID(); ?>" href="<?php the_field( 'lender_cta_button_url' ); ?>" rel="nofollow"><?php the_field( 'lender_cta_button_text' ); ?></a>
+			<a class="btn lender-count" data-lender-id="<?php echo get_the_ID(); ?>" data-clicked="no" href="<?php the_field( 'lender_cta_button_url' ); ?>" rel="nofollow"><?php the_field( 'lender_cta_button_text' ); ?></a>
 			<a class="btn-link" href="<?php the_field( 'lender_cta_link_url' ); ?>"><?php the_field( 'lender_cta_link_text' ); ?></a>
 		</div>
 		<div class="bottom-desc">

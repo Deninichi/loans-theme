@@ -14,25 +14,29 @@
 
 	<div class="row">
 		
-		<?php foreach ( $past_winners['winners'] as $key => $winner ): ?>
+		<?php if ( $past_winners['winners'] ): ?>
+			
+			<?php foreach ( $past_winners['winners'] as $key => $winner ): ?>
 
-			<?php if ( $key + 1 == 0 || ($key + 1)%3 == 1 ): ?>
-				<div class="col-12 col-md-3">
-			<?php endif ?>
+				<?php if ( $key + 1 == 0 || ($key + 1)%3 == 1 ): ?>
+					<div class="col-12 col-md-3">
+				<?php endif ?>
 
-				<a href="<?php echo $winner['winner_url']; ?>">
-					<span class="icon-wrapper"><i class="fas fa-angle-right"></i></span>
-					<?php echo $winner['winner_text']; ?>
-				</a>
+					<a href="<?php echo $winner['winner_url']; ?>">
+						<span class="icon-wrapper"><i class="fas fa-angle-right"></i></span>
+						<?php echo $winner['winner_text']; ?>
+					</a>
 
-			<?php if ( ( $key + 1 ) % 3 == 0 ) : ?>
+				<?php if ( ( $key + 1 ) % 3 == 0 ) : ?>
+					</div>
+				<?php endif ?>
+				
+			<?php endforeach ?>
+
+			<?php if ( ( $key + 1 ) % 3 != 0 ) : ?>
 				</div>
 			<?php endif ?>
-			
-		<?php endforeach ?>
 
-		<?php if ( ( $key + 1 ) % 3 != 0 ) : ?>
-			</div>
 		<?php endif ?>
 
 	</div>
