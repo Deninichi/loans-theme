@@ -143,6 +143,19 @@ header{
 	    				text-decoration: none;
 	    			}
 	    		}
+
+	    		&:hover .sub-menu {
+		            display: block;
+		          }
+		        .sub-menu {
+		            display: none;
+		            position: absolute;
+		            min-width: 200px;
+
+		            li{
+		              margin: 5px -0px;
+		            }
+		        }
 	    	}
 	    }
 	}
@@ -1350,6 +1363,62 @@ footer{
 	}
 }
 
+
+/*======== Past winners section ========*/
+.countries-section {
+	
+	color: $heading-color;
+
+	.row {
+		margin: 0;
+	}
+	
+	.country {
+
+		.country-title {
+			display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    margin-bottom: 1rem;
+		    border-bottom: 1px solid $light-grey;
+		    padding: 1rem 2rem;
+		    font-weight: 500;
+
+		    .flag {
+		    	margin-right: 1rem;
+		    }
+		}
+
+		ul {
+			list-style: none;
+			padding: 0.5rem 2rem;
+
+			li {
+				margin-bottom: .5rem;
+
+				a {
+					color: $heading-color;
+
+					&:hover {
+						color: $pink;
+					}
+
+					&:hover i {
+						color: $pink;
+					}
+				}
+
+				i {
+					float: right;
+					color: $light-grey;
+					transition: color .3s;
+				}
+			}
+		}
+	}
+}
+
+
 /*======== Comments ========*/
 #comment {
 	max-width: 100%;
@@ -1385,5 +1454,42 @@ footer{
 }
 
 /*======== PAGES ========*/
-/*=== Home page ===*/
+/*=== Intro page ===*/
+.intro {
+	.title-wrap {
+		text-align: center;
+		padding: 2rem;
+		position: relative;
+
+		& > img {
+			width: 120px;
+			margin-bottom: 30px;
+		}
+
+		&:before {
+			content: '';
+		    width: 100%;
+		    height: 50px;
+		    position: absolute;
+		    background-color: $dark-green;
+		    left: -100%;
+		    top: 50%;
+		    transform: translateY(-50%);
+		}
+
+		&:after {
+			content: '';
+		    width: 100%;
+		    height: 50px;
+		    position: absolute;
+		    background-color: $dark-green;
+		    right: -100%;
+		    top: 50%;
+		    transform: translateY(-50%);
+		}
+	}
+}
+
+
+
 

@@ -3,6 +3,14 @@
 	$logo = get_field( 'lender_logo' );
 	$checkboxes = get_field( 'lender_checkboxes' );
 
+	$freedom_finance = get_field( 'lender_freedom_finance_text' );
+	if ( empty( $freedom_finance ) ) {
+		$freedom_finance = 'Freedom Finance';
+	}
+
+	$nofollow_btn = get_field( 'lender_cta_button_nowollow' );
+	$nofollow_link = get_field( 'lender_cta_link_nowollow' );
+
 ?>
 
 <article class="lender-loop col-12 col-md-6 col-lg-4 mb-4">
@@ -56,11 +64,21 @@
 			</table>
 		</div>
 		<div class="actions bt">
-			<a class="btn lender-count" data-lender-id="<?php echo get_the_ID(); ?>" href="<?php the_field( 'lender_cta_button_url' ); ?>" rel="nofollow"><?php the_field( 'lender_cta_button_text' ); ?></a>
-			<a class="btn-link" href="<?php the_field( 'lender_cta_link_url' ); ?>"><?php the_field( 'lender_cta_link_text' ); ?></a>
+			<a  class="btn lender-count" 
+				data-lender-id="<?php echo get_the_ID(); ?>" 
+				href="<?php the_field( 'lender_cta_button_url' ); ?>" 
+				<?php echo ( is_array( $nofollow_btn ) && $nofollow_btn[0] == 1 ) ? 'rel="nofollow"' : '' ?>>
+					<?php the_field( 'lender_cta_button_text' ); ?>
+			</a>
+
+			<a class="btn-link" 
+				href="<?php the_field( 'lender_cta_link_url' ); ?>"
+				<?php echo ( is_array( $nofollow_link ) && $nofollow_link[0] == 1 ) ? 'rel="nofollow"' : '' ?>>
+					<?php the_field( 'lender_cta_link_text' ); ?>
+			</a>
 		</div>
 		<div class="bottom-desc">
-			<?php the_field( 'lebder_freedom_finance' ); ?> <?php _e( 'valde Freedom finance', 'loans' ); ?>
+			<?php the_field( 'lebder_freedom_finance' ); ?> valde <?php echo $freedom_finance ?>
 		</div>
 	</div>
 </article><!-- .post-loop -->

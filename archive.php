@@ -26,7 +26,6 @@ get_header(); ?>
 
 	<div class="title-block text-center d-flex justify-content-center align-items-center mb-3">
 		<h1><?php loans_the_title(); ?></h1>
-		<img src="<?php echo $title_icon ?>" alt="">
 	</div>
 	<div class="description has-read-more text-center">
 		<?php loans_the_description() ?>

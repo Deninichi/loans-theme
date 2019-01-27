@@ -10,6 +10,9 @@
 		$freedom_finance = 'Freedom Finance';
 	}
 
+	$nofollow_btn = get_field( 'lender_cta_button_nowollow' );
+	$nofollow_link = get_field( 'lender_cta_link_nowollow' );
+
 ?>	
 
 <article class="lender">
@@ -79,7 +82,7 @@
 			</div>
 			<div class="cta-btn col-12 col-md-3">
 				<div class="actions">
-					<a class="btn lender-count" data-lender-id="<?php echo get_the_ID(); ?>" data-clicked="no" href="<?php the_field( 'lender_cta_button_url' ); ?>" rel="nofollow"><?php the_field( 'lender_cta_button_text' ); ?></a>
+					<a class="btn lender-count" data-lender-id="<?php echo get_the_ID(); ?>" data-clicked="no" href="<?php the_field( 'lender_cta_button_url' ); ?>" <?php echo ( is_array( $nofollow_btn ) && $nofollow_btn[0] == 1 ) ? 'rel="nofollow"' : '' ?>><?php the_field( 'lender_cta_button_text' ); ?></a>
 				</div>
 			</div>
 		</div>
