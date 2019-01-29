@@ -27,15 +27,18 @@ add_action( 'wp_enqueue_scripts', 'loans_enqueue_scripts', 90 );
 
 
 /**
- * Register Menu
+ * Theme Setup
  */
-function loans_nav_menus(){
-	register_nav_menus( array(
+function loans_theme_setup(){
+	
+  register_nav_menus( array(
 		'primary_menu' => 'Primary Menu',
 		'footer_menu' => 'Footer Menu'
 	) );
+
+  load_theme_textdomain( 'loans', get_template_directory() . '/languages' );
 };
-add_action('after_setup_theme', 'loans_nav_menus' );
+add_action('after_setup_theme', 'loans_theme_setup' );
 
 
 /**
@@ -45,9 +48,9 @@ add_action('after_setup_theme', 'loans_nav_menus' );
  */
 function loans_widgets_init() {
   register_sidebar( array(
-    'name'          => esc_html__( 'Primary sidebar', 'loans' ),
+    'name'          => __( 'Primary sidebar', 'loans' ),
     'id'            => 'primary-sidebar',
-    'description'   => esc_html__( 'Add widgets here.', 'loans' ),
+    'description'   => __( 'Add widgets here.', 'loans' ),
     'before_widget' => '',
     'after_widget'  => '',
     'before_title'  => '<div class="title-wrapper"><h3 class="widget-title">',

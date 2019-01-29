@@ -76,7 +76,7 @@
 			</a>
 		</div>
 		<div class="bottom-desc">
-			<?php the_field( 'lebder_freedom_finance' ); ?> valde <?php echo $freedom_finance ?>
+			<?php the_field( 'lebder_freedom_finance' ); ?> <?php _e( 'valde', 'lender' ); ?> <?php echo $freedom_finance ?>
 		</div>
 		
 		<?php if ( get_field( 'lender_interest_rate' ) ): ?>

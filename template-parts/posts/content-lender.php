@@ -64,7 +64,7 @@
 		<div class="row-wrapper pt-3 pb-3">
 			<div class="col-12 col-md-3">
 				<div class="bottom-desc">
-					<?php the_field( 'lebder_freedom_finance' ); ?> valde <?php echo $freedom_finance ?>
+					<?php the_field( 'lebder_freedom_finance' ); ?> <?php _e( 'valde', 'loans' ); ?> <?php echo $freedom_finance ?>
 				</div>
 			</div>
 			<div class="checkboxes col-12 col-md-6">

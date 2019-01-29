@@ -31,7 +31,7 @@
 				<i class="fas fa-star"></i>
 				<i class="fas fa-star"></i>
 			</div>
-			<p class="mb-0">Totalt: <span><?php echo $author['totalt'] ?></span> röster. Betyg: <span><?php echo $author['betyg']; ?></span></p>
+			<p class="mb-0"><?php _e( 'Totalt:', 'loans' ); ?> <span><?php echo $author['totalt'] ?></span> <?php _e( 'röster.', 'loans' ); ?> <?php _e( 'Betyg:', 'loans' ); ?> <span><?php echo $author['betyg']; ?></span></p>
 		</div>
 		<div class="col-12 col-md-3 actions d-flex align-items-center">
 			<a class="btn btn-green" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php _e( 'FÖRFATTARE', 'loans' ); ?></a>
