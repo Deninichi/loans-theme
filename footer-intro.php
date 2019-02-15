@@ -16,13 +16,6 @@
 								<li><a href=""><img src="<?php echo get_template_directory_uri() . '/assets/images/flags/ger.png'; ?>" alt=""></a></li>
 							</ul>
 						</div>
-						<div class="footer-menu">
-							<?php wp_nav_menu( array(
-								'theme_location'  => 'footer_menu',
-								'menu'            => 'footer_menu',
-								'container'       => 'nav'
-							) ); ?>
-						</div>
 
 						<div class="footer-copy mb-5">
 							<?php the_field( 'loans_footer_text', 'option' ); ?>

@@ -3717,8 +3717,7 @@ module.exports = Math.scale || function scale(x, inLow, inHigh, outLow, outHigh)
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(126);
-__webpack_require__(328);
-(function webpackMissingModule() { throw new Error("Cannot find module \"whatch\""); }());
+module.exports = __webpack_require__(328);
 
 
 /***/ }),

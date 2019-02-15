@@ -78,7 +78,7 @@
 			</a>
 		</div>
 		<div class="bottom-desc">
-			<?php the_field( 'lebder_freedom_finance' ); ?> valde <?php echo $freedom_finance ?>
+			<?php the_field( 'lebder_freedom_finance' ); ?> <?php _e( 'valde', 'loans' ); ?> <?php echo $freedom_finance ?>
 		</div>
 	</div>
 </article><!-- .post-loop -->

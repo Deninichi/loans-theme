@@ -11,6 +11,12 @@
 		padding: 1rem;
 		justify-content: center;
 
+		&.intro {
+			.logo {
+				bottom: -5px;
+			}
+		}
+
 		.logo{
 			position: absolute;
     		left: 10px;
@@ -52,6 +58,10 @@
 
 
 @media (max-width: 768px) {
+
+	h2, .h2 {
+		font-size: 1.5rem;
+	}
 
 	/*=== HEADER ===*/
 	footer .footer-menu {
@@ -127,6 +137,16 @@
 			& > div {
 				border: 1px solid #eee;
 				box-shadow: 2px -2px 30px -3px #efefef;
+			}
+		}
+	}
+
+	/*=== Intro Page ===*/
+	.intro {
+		.title-wrap, .intro-advanced-content, .main-content-wrap {
+			
+			&:before, &::after {
+				display: none;
 			}
 		}
 	}

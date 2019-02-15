@@ -6,8 +6,13 @@ $title_icon = get_field( 'title_icon' );
 
 ?>
 
-<?php get_header(); ?>
+<?php get_header( 'intro' ); ?>
 
+<style>
+	#menu-item-wpml-ls-2-en {
+		display: none;
+	}
+</style>
 <div class="intro">
 	<div class="title-wrap white-shadow">
 		<img src="<?php echo $title_icon['url']; ?>" alt="">
@@ -29,9 +34,11 @@ $title_icon = get_field( 'title_icon' );
 	<div class="main-content">
 
 		<?php get_template_part( 'template-parts/countries-section' ) ?>
+
+		<?php get_template_part( 'template-parts/intro-advanced-content-section' ) ?>
 		
 	</div>
 
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer( 'intro' ); ?>

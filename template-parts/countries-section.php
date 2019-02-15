@@ -26,11 +26,15 @@
 								<?php echo $country['title'] ?>
 							</div>
 						</div>
-						<ul>
-							<li><a href="#"><?php _e( 'Freedom Finance', 'loans' ); ?><i class="fas fa-link"></i></a></li>
-							<li><a href="#"><?php _e( 'Lendo', 'loans' ); ?><i class="fas fa-link"></i></a></li>
-							<li><a href="#"><?php _e( 'Zmarta', 'loans' ); ?><i class="fas fa-link"></i></a></li>
-						</ul>
+
+						<?php if ( is_array($country['links']) ): ?>
+							<ul>
+								<?php foreach ( $country['links'] as $key => $link ): ?>
+									<li><a href="<?php echo esc_url( $link['url'] ); ?>"><?php echo htmlspecialchars($link['text']); ?><i class="fas fa-link"></i></a></li>
+								<?php endforeach ?>
+							</ul>
+						<?php endif ?>
+						
 					</div>
 				</div>
 

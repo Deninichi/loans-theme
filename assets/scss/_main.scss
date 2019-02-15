@@ -60,6 +60,18 @@ header{
     justify-content: space-between;
     padding: 1rem 2rem;
 
+    &.intro {
+    	justify-content: center;
+    	padding-top: 2rem;
+    	position: relative;
+
+    	nav {
+    		position: absolute;
+		    right: 0;
+		    top: 10px;
+    	}
+    }
+
     .logo{
     	@include font-rubick;
     	color: $pink;
@@ -151,6 +163,11 @@ header{
 		            display: none;
 		            position: absolute;
 		            min-width: 200px;
+		            height: auto;
+		            z-index: 90;
+		            background: white;
+				    padding: 10px;
+				    margin-left: -10px;
 
 		            li{
 		              margin: 5px -0px;
@@ -188,6 +205,10 @@ header{
 /*======== MAIN CONTENT ========*/
 .main{
 	padding-top: 5rem;
+
+	&.main-intro {
+		padding-top: 1rem;
+	}
 }
 .title-block {
 
@@ -1368,12 +1389,10 @@ footer{
 .countries-section {
 	
 	color: $heading-color;
-
-	.row {
-		margin: 0;
-	}
 	
 	.country {
+
+		margin-bottom: 1rem;
 
 		.country-title {
 			display: flex;
@@ -1486,6 +1505,132 @@ footer{
 		    right: -100%;
 		    top: 50%;
 		    transform: translateY(-50%);
+		}
+	}
+
+	/*= Intro Advanced Content =*/
+	.intro-advanced-content {
+
+		position: relative;
+
+		.top-content h3 {
+			font-size: 1.125rem;
+			color: $dark-green;
+			font-weight: 500;
+		}
+
+		&:before {
+			content: '';
+		    width: 100%;
+		    height: 100%;
+		    position: absolute;
+		    background-color: $grey;
+		    left: -100%;
+		    top: 50%;
+		    transform: translateY(-50%);
+		}
+
+		&:after {
+			content: '';
+		    width: 100%;
+		    height: 100%;
+		    position: absolute;
+		    background-color: $grey;
+		    right: -100%;
+		    top: 50%;
+		    transform: translateY(-50%);
+		}
+
+		.box {
+		    border: 2px solid $dark-green;
+		    padding: .25rem;
+		    display: flex;
+		    align-items: center;
+		    background-color: #fff;
+		    margin-bottom: 1rem;
+
+		    &:last-child {
+		    	margin-bottom: 0;
+		    }
+
+			.icon-wrap {
+				background-color: $dark-green;
+			    color: white;
+			    font-size: 1.5rem;
+			    padding: .75rem 1rem;
+			}
+
+			.link-wrap {
+				width: 100%;
+    			text-align: center;
+
+    			a {
+					color: $heading-color;
+					font-size: 1.1rem;
+    				font-weight: 500;
+    				word-break: break-all;
+
+					&:hover {
+						color: $pink;
+						text-decoration: none;
+					}
+    			}
+			}
+		}
+
+		.main-content {
+
+			.section-title {
+				background-color: #fff;
+				width: 100%;
+			}
+
+			.main-content-wrap {
+				position: relative;
+
+				h2 {
+					font-size: 2rem;
+
+					i {
+						font-size: 1.5rem;
+    					margin-right: 1rem;
+    					color: $pink;
+					}
+				}
+
+				&:before {
+					content: '';
+				    width: 100%;
+				    height: 100%;
+				    position: absolute;
+				    background-color: white;
+				    left: -100%;
+				    top: 50%;
+				    transform: translateY(-50%);
+				    border-top: 1px solid $light-grey;
+				    z-index: 1;
+				}
+
+				&:after {
+					content: '';
+				    width: 100%;
+				    height: 100%;
+				    position: absolute;
+				    background-color: white;
+				    right: -100%;
+				    top: 50%;
+				    transform: translateY(-50%);
+				    border-top: 1px solid $light-grey;
+				    z-index: 1;
+				}
+
+				.white-shadow {
+					padding: 2rem;
+					box-shadow: 0px 10px 20px 5px rgba(238,238,238,.5);
+					z-index: 90;
+    				position: relative;
+				}
+			}
 		}
 	}
 }
