@@ -12,8 +12,8 @@
 								<li><a href="/ag/"><img src="<?php echo get_template_directory_uri() . '/assets/images/flags/arg.png'; ?>" alt=""></a></li>
 								<li><a href="/co/"><img src="<?php echo get_template_directory_uri() . '/assets/images/flags/col.png'; ?>" alt=""></a></li>
 								<li><a href="/pe/"><img src="<?php echo get_template_directory_uri() . '/assets/images/flags/flag.png'; ?>" alt=""></a></li>
-								<li><a href=""><img src="<?php echo get_template_directory_uri() . '/assets/images/flags/fra.png'; ?>" alt=""></a></li>
-								<li><a href=""><img src="<?php echo get_template_directory_uri() . '/assets/images/flags/ger.png'; ?>" alt=""></a></li>
+								<li><a href="#"><img src="<?php echo get_template_directory_uri() . '/assets/images/flags/fra.png'; ?>" alt=""></a></li>
+								<li><a href="#"><img src="<?php echo get_template_directory_uri() . '/assets/images/flags/ger.png'; ?>" alt=""></a></li>
 							</ul>
 						</div>
 

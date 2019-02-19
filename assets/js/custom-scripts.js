@@ -7,7 +7,10 @@
 			$(this).toggleClass('opened');
 		});	
 
-
+		// Remove English language
+		$( '#menu-item-wpml-ls-2-en' ).remove();
+		$( 'link[hreflang="en"]' ).remove();
+		$( '*[content="en_US"]' ).attr('content', 'es-ES');
 
 		// read more feature
 		var paragraphs = $('.description.has-read-more > *');

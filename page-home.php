@@ -92,6 +92,7 @@ $title_icon = get_field( 'homepage_title_icon' );
 							endwhile;
 
 						endif;
+						wp_reset_query();
 					?>
 					
 				</div>
