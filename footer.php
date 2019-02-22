@@ -9,7 +9,7 @@
 			break;
 		}
 	}
-	var_dump($sweden_url);
+	
 ?>
 
 
