@@ -5,16 +5,16 @@ function loans_enqueue_scripts() {
   wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/fontawesome/css/all.min.css', array(), '5.4.1', 'all' );
 
 	wp_enqueue_style('loans-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '4.1.3' );
- 	wp_enqueue_style('loans-style', get_stylesheet_uri(), array(), '_bld_1550268536936' );
- 	wp_enqueue_style('loans-style-build', get_template_directory_uri() . '/assets/dist/css/style.css', array(), '_bld_1550268536936' );
+ 	wp_enqueue_style('loans-style', get_stylesheet_uri(), array(), '_bld_1551525894829' );
+ 	wp_enqueue_style('loans-style-build', get_template_directory_uri() . '/assets/dist/css/style.css', array(), '_bld_1551525894829' );
 
 	wp_deregister_script( 'jquery' );
     wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
     wp_enqueue_script( 'jquery' );
 	
-  	//wp_enqueue_script('loans-script-build', get_template_directory_uri() . '/assets/dist/js/build.js', array('jquery'), '_bld_1550268536936', true );
-  	wp_enqueue_script('bootstrap-script', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '_bld_1550268536936', true );
-  	wp_enqueue_script('loans-script', get_template_directory_uri() . '/assets/js/custom-scripts.js', array('jquery'), '_bld_1550268536936', true );
+  	//wp_enqueue_script('loans-script-build', get_template_directory_uri() . '/assets/dist/js/build.js', array('jquery'), '_bld_1551525894829', true );
+  	wp_enqueue_script('bootstrap-script', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '_bld_1551525894829', true );
+  	wp_enqueue_script('loans-script', get_template_directory_uri() . '/assets/js/custom-scripts.js', array('jquery'), '_bld_1551525894829', true );
 
   	wp_localize_script( 'loans-script', 'loans', 
       	array(
@@ -58,21 +58,3 @@ function loans_widgets_init() {
   ) );
 }
 add_action( 'widgets_init', 'loans_widgets_init' );
-
-
-function switch_page( $query ){
-  if ( ICL_LANGUAGE_CODE == "en" ) {
-    
-    // Intro
-    if( 584 == $query->get('page_id') && $query->is_main_query() ) {
-        $query->set( 'page_id', 1025 );
-      
-        add_filter( 'wpml_current_language', function(){ return 'es'; } );
-    }
-
-  }
-
-  return $request;
-    
-}
-add_action( 'pre_get_posts', 'switch_page' );

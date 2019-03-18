@@ -17,7 +17,7 @@ $title_icon = get_field( 'title_icon' );
 	<div class="title-wrap white-shadow">
 		<img src="<?php echo $title_icon['url']; ?>" alt="">
 		<div class="title-block text-center d-flex justify-content-center align-items-center mb-3">
-			<?php loans_the_title(); ?>
+			<h1><?php echo get_the_title(); ?></h1>
 		</div>
 		<div class="description has-read-more text-center">
 			<?php loans_the_description() ?>
