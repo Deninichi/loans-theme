@@ -18,7 +18,7 @@
 
 	<div class="row">
 		
-		<div class="col-12 col-md-6">
+		<div class="col-12 col-md-6 mb-3 mb-md-0">
 			<div class="pro-wrap items">
 				<ul>
 					<?php foreach ( $lender_pros_and_cons['pros_and_cons_items'] as $item ): ?>

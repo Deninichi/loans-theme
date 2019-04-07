@@ -128,7 +128,8 @@
 					$args = array(
 						'post_type'   => 'lender',
 						'post__in' 	  => $related_posts,
-						'posts_per_page' => -1
+						'posts_per_page' => -1,
+						'orderby'	  => 'post__in'
 					);
 					$related_query = new WP_Query( $args );
 

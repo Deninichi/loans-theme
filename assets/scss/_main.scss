@@ -9,7 +9,7 @@
 /*======== TYPOGRAPHY ========*/
 body{
 	color: $body-color;
-	font-size: 15px;
+	font-size: 16px;
 	@include font-rubick;
 	font-weight: 400;
 }
@@ -995,11 +995,17 @@ footer{
 				margin-bottom: .75rem;
 				color: $heading-color;
 				font-weight: 500;
+				display: flex;
+    			align-items: center;
 
 				i{
 				    color: white;
 				    padding: 8px;
 				    margin-right: 1rem;
+				}
+
+				p {
+					margin-bottom: 0;
 				}
 
 				&:last-child{

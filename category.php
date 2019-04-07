@@ -59,7 +59,8 @@ get_header(); ?>
 				          	$args = array(
 				            	'post_type'   => 'lender',
 				            	'post__in'    => $top_3_lenders,
-				            	'numberposts' => -1
+				            	'numberposts' => -1,
+				            	'orderby'	  => 'post__in'
 				          	);
 				          	$posts_query = new WP_Query( $args );
 

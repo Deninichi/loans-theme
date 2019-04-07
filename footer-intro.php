@@ -27,9 +27,7 @@
 								<li><a href="<?php echo ( isset( $languages['co'] ) ) ? $languages['co']['url'] : '/co'; ?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/flags/col.png'; ?>" alt=""></a></li>
 								<li><a href="<?php echo ( isset( $languages['pe'] ) ) ? $languages['pe']['url'] : '/pe'; ?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/flags/flag.png'; ?>" alt=""></a></li>
 								<li><a href="<?php echo ( isset( $languages['cl'] ) ) ? $languages['cl']['url'] : '/cl'; ?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/flags/chile.png'; ?>" alt=""></a></li>
-								<li><a href="<?php echo ( isset( $languages['pt-br'] ) ) ? $languages['pt-br']['url'] : '/pt-br'; ?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/flags/brazil.png'; ?>" alt=""></a></li>
-								<li><a href="<?php echo ( isset( $languages['pt-pt'] ) ) ? $languages['pt-pt']['url'] : '/pt-pt'; ?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/flags/pt.png'; ?>" alt=""></a></li>
-								<li><a href="<?php echo ( isset( $languages['hi'] ) ) ? $languages['hi']['url'] : '/hi'; ?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/flags/india.png'; ?>" alt=""></a></li>
+								<li><a href="<?php echo ( isset( $languages['us'] ) ) ? $languages['us']['url'] : '/us'; ?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/flags/us.png'; ?>" alt=""></a></li>
 							</ul>
 						</div>
 
