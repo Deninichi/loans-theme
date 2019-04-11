@@ -918,7 +918,8 @@ footer {
   padding-left: 1.5rem; }
   .advanced-content .content-item ul li, .advanced-content .content-item ol li {
     position: relative;
-    list-style: none; }
+    list-style: none;
+    margin-bottom: 1rem; }
     .advanced-content .content-item ul li:before, .advanced-content .content-item ol li:before {
       content: '\F00C';
       color: #eb5864;
@@ -1114,7 +1115,7 @@ footer {
     background-color: #207a88;
     color: white; }
 
-/*======== Past winners section ========*/
+/*======== Countries section ========*/
 .countries-section {
   color: #171717; }
   .countries-section .country {
@@ -1132,6 +1133,10 @@ footer {
       font-weight: 500; }
       .countries-section .country .country-title .flag {
         margin-right: 1rem; }
+      .countries-section .country .country-title a {
+        color: #171717; }
+        .countries-section .country .country-title a:hover {
+          color: #eb5864; }
     .countries-section .country ul {
       list-style: none;
       padding: 0.5rem 2rem; }

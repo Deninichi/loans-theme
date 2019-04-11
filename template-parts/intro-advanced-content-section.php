@@ -52,9 +52,8 @@
 		</div>
 
 	<?php endif ?>
-
 	
-	<?php if ( $advanced_content_main ): ?>
+	<?php if ( ! empty( $advanced_content_main['heading'] ) || ! empty($advanced_content_main['left_column'] ) || ! empty($advanced_content_main['right_column'] ) || ! empty($advanced_content_main['main_content'] ) ): ?>
 		
 		<div class="row main-content mt-5">
 

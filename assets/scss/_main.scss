@@ -1122,6 +1122,7 @@ footer{
 			li {
 				position: relative;
 				list-style: none;
+				margin-bottom: 1rem;
 
 				&:before {
 					content: '\f00c';
@@ -1395,7 +1396,7 @@ footer{
 }
 
 
-/*======== Past winners section ========*/
+/*======== Countries section ========*/
 .countries-section {
 	
 	color: $heading-color;
@@ -1416,6 +1417,14 @@ footer{
 		    .flag {
 		    	margin-right: 1rem;
 		    }
+
+		    a {
+				color: $heading-color;
+
+				&:hover {
+					color: $pink;
+				}
+			}
 		}
 
 		ul {

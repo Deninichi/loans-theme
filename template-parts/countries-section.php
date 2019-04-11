@@ -20,10 +20,10 @@
 					<div class="country-wrap white-shadow bb-3-green">
 						<div class="country-title">
 							<div class="flag">
-								<img src="<?php echo $country['flag']['url']; ?>" alt="">
+								<a href="<?php echo $country['url']; ?>"><img src="<?php echo $country['flag']['url']; ?>" alt=""></a>
 							</div>
 							<div class="title">
-								<?php echo $country['title'] ?>
+								<a href="<?php echo $country['url']; ?>"><?php echo $country['title'] ?></a>
 							</div>
 						</div>
 

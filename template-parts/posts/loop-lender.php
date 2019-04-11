@@ -16,7 +16,9 @@
 <article class="lender-loop col-12 col-md-6 col-lg-4 mb-4">
 	<div class="lender-loop-wrap">
 		<div class="lender-image">
-			<a href="<?php the_permalink(); ?>"><img src="<?php echo $logo['url']; ?>" alt=""></a>
+			<?php if ( isset($logo['url']) ): ?>
+				<a href="<?php the_permalink(); ?>"><img src="<?php echo $logo['url']; ?>" alt=""></a>
+			<?php endif ?>
 		</div>
 		<div class="lender-content">
 			<table>
@@ -41,8 +43,8 @@
 						<td><?php _e( 'Ränta', 'loans' ); ?></td>
 						<td><?php the_field( 'lender_ranta' ); ?></td>
 					</tr>
-
-					<?php if ( $checkboxes ): ?>
+				
+					<?php if ( $checkboxes && is_array($checkboxes) ): ?>
 						<?php foreach ( $checkboxes as $checkbox ): ?>
 						
 							<tr>
