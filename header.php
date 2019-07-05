@@ -16,7 +16,7 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class() ?>>
-
+	
 	<header>
 		<div class="logo">
 			<a href="<?php echo icl_get_home_url(); ?>"><?php the_field( 'loans_logo', 'option' ); ?></a>

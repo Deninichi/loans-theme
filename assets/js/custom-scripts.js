@@ -130,7 +130,7 @@
 		paragraphs.last().find('.read-more').remove();
 
 		if ( paragraphs.length > 2 ) {
-			paragraphs.eq(1).append(' <a class="read-more custom-underline closed" href=""><span class="text-wrapper">Läs mer</span> <span class="icon-wrapper icon-right"><i class="fas fa-arrow-circle-right"></i></span></a>')
+			paragraphs.eq(1).append(' <a class="read-more custom-underline closed" href=""><span class="text-wrapper">Lee más</span> <span class="icon-wrapper icon-right"><i class="fas fa-arrow-circle-right"></i></span></a>')
 		}
 
 		paragraphs.each(function(index, el) {

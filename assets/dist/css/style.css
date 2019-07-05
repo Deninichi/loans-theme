@@ -716,8 +716,8 @@ footer {
   border-top: 1px solid #e3e8f0; }
 
 /*=== Simple Content ===*/
-.simple-content {
-  border: 1px solid #e3e8f0; }
+.simple-content h2 {
+  font-size: 2rem; }
 
 /*=== Icon boxes ===*/
 .icon-boxes h5 a {

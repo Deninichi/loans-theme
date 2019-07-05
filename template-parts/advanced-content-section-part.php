@@ -29,7 +29,7 @@
 	<?php foreach ( $advanced_content as $key => $content ): ?>
 		<div content-id="item-<?php echo $key; ?>" class="content-item">
 			<div class="heading d-flex align-items-center pb-3 pt-3">
-				<img class="style-svg mr-4" src="<?php echo esc_url( $heading['heading_icon']['sizes']['thumbnail'] ); ?>" width="20" alt="">
+				<!-- <img class="style-svg mr-4" src="<?php echo esc_url( $heading['heading_icon']['sizes']['thumbnail'] ); ?>" width="20" alt=""> -->
 				<h2 class="mb-0"><?php echo esc_textarea( $content['heading'] ); ?></h2>
 			</div>
 			<div class="content-body">

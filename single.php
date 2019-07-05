@@ -10,6 +10,12 @@
  * @version 1.0
  */
 
+$lenders = get_posts( array(
+	'post_type' => 'lender',
+	'numberposts' => -1,
+	'post_status' => array( 'publish' )
+) );
+
 get_header(); ?>
 
 
@@ -58,7 +64,31 @@ get_header(); ?>
 		</div><!-- #primary -->
 		
 		<div id="sidebar" class="col-12 col-lg-4 col-xl-3">
-			<?php dynamic_sidebar( 'primary-sidebar' ); ?>
+			<?php 
+				if( 'lender' !== get_post_type() ) {
+					dynamic_sidebar( 'primary-sidebar' );
+				} else {
+					?>
+						<aside class="widget">
+							<div class="title-wrapper">
+								<h3 class="widget-title"><?php _e( 'Lenders', 'loans' ); ?></h3>
+							</div>
+							<ul class="ul-nav">
+								<?php foreach ( $lenders as $key => $lender ): ?>
+									<li>
+										<a class="icon-absolute-right" href="<?php echo get_permalink( $lender ); ?>">
+											<span class="icon-wrapper">
+												<i class="fas fa-angle-right"></i>
+											</span><?php echo get_the_title( $lender ); ?>
+										</a>
+									</li>
+								<?php endforeach ?>
+							</ul>
+						</aside>
+					<?php
+				}
+				 
+			?>
 		</div>
 	</div><!-- .wrap -->
 </div><!-- .container -->

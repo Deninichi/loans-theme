@@ -31,6 +31,12 @@ $title_icon = get_field( 'homepage_title_icon' );
 
 			<?php get_template_part( 'template-parts/collapse-section-part' ) ?>
 
+			<?php if ( get_field( 'home_content' ) ): ?>
+				<section class="simple-content content-section">
+					<?php the_field( 'home_content' ); ?>
+				</section>
+			<?php endif ?>
+
 			
 			<?php
 
@@ -61,42 +67,6 @@ $title_icon = get_field( 'homepage_title_icon' );
 
 				endif;
 			?>
-
-
-			<section class="posts content-section text-center pr-0 pl-0">
-				<h2 class="posts-heading mb-3"><?php the_field( 'homepage_lenders_list_heading' ); ?></h2>
-				<p><?php the_field( 'homepage_lenders_list_description' ); ?></p>
-				<div class="row posts-loop mt-5">
-
-					<?php
-
-						$args = array(
-							'post_type' => 'lender',
-							'posts_per_page' => -1
-						);
-						$wp_query = new WP_Query( $args );
-
-						if ( $wp_query->have_posts() ) :
-
-							/* Start the Loop */
-							while ( $wp_query->have_posts() ) : $wp_query->the_post();
-
-								/*
-								 * Include the Post-Format-specific template for the content.
-								 * If you want to override this in a child theme, then include a file
-								 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-								 */
-
-								get_template_part( 'template-parts/posts/loop', get_post_type() );
-
-							endwhile;
-
-						endif;
-						wp_reset_query();
-					?>
-					
-				</div>
-			</section>
 
 		</div>
 		<div id="sidebar" class="col-12 col-lg-4 col-xl-3">

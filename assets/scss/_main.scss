@@ -802,7 +802,11 @@ footer{
 
 /*=== Simple Content ===*/
 .simple-content{
-	border: 1px solid $light-grey;
+	// border: 1px solid $light-grey;
+
+	h2 {
+		font-size: 2rem;
+	}
 }
 
 /*=== Icon boxes ===*/
